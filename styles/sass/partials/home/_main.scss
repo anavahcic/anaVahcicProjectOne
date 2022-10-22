@@ -1,0 +1,58 @@
+@use "../global/variables";
+
+// Home About Section Styles
+
+.about,
+.vacation {
+    background-color: #EAFEFC;
+}
+
+.aboutFlex {
+    display: flex;
+}
+li {
+    list-style: none;
+    a {
+    text-decoration: none;
+    }
+    
+    
+}
+
+// Home Vacation Section Styles
+
+.vacation {
+    background-image: url(../../../../assets/banner.jpg);
+ .vacationFlex {
+    display: flex;
+ }
+ h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #0D457F;
+ }
+ p {
+    text-align: center;
+ }
+
+}
+
+// Home Gallery Section Styles
+
+.gallery {
+    background-color: #0D457F;
+}
+
+.galleryFlex {
+    display: flex;
+    flex-direction: row;
+    img {
+        max-width: 80%;
+        padding: 50px 1px;
+       
+    }
+}
+
+
+
+

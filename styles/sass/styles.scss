@@ -1,3 +1,5 @@
-@use "./partials/setup";
-@use "./partials/typography";
-@use "./partials/variables";
+@use "./partials/global/setup";
+@use "./partials/global/typography";
+@use "./partials/global/variables";
+@use "./partials/home/header";
+@use "./partials/home/main";

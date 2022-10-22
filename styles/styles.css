@@ -230,15 +230,18 @@ html {
   font-size: 125%;
 }
 
-nav {
-  font-family: "Roboto", sans-serif;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   font-weight: normal;
   color: #000000;
+}
+
+nav {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
 }
 
 h1, h2, h3, h4, button {
@@ -252,16 +255,130 @@ h1 {
 
 h2 {
   font-size: 2.8rem;
+  line-height: 6.2rem;
 }
 
 h3 {
   font-size: 2.5rem;
+  line-height: 3.6rem;
+  letter-spacing: 1.3px;
 }
 
 h4 {
   font-size: 1.5rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.8px;
 }
 
 button {
   font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #FDD908;
+  color: #000000;
+  text-align: center;
+}
+
+header {
+  background-image: url(../assets/home-header.jpg);
+}
+
+.homeNav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.homeNav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+.homeNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+.homeNav li {
+  padding: 0 20px;
+}
+.homeNav .home a {
+  text-decoration: underline;
+}
+.homeNav a {
+  text-decoration: none;
+}
+
+.about,
+.vacation {
+  background-color: #EAFEFC;
+}
+
+.aboutFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+
+.vacation {
+  background-image: url(../../../../assets/banner.jpg);
+}
+.vacation .vacationFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.vacation h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #0D457F;
+}
+.vacation p {
+  text-align: center;
+}
+
+.gallery {
+  background-color: #0D457F;
+}
+
+.galleryFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.galleryFlex img {
+  max-width: 80%;
+  padding: 50px 1px;
 }

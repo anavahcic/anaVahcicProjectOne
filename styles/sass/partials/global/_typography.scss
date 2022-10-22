@@ -5,15 +5,19 @@ html {
     font-size: 125%;
 }
 
-nav {
-    font-family: 'Roboto', sans-serif;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: normal;
     color: variables.$body;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+
 }
 
 h1,h2,h3,h4, button {
@@ -27,20 +31,43 @@ h1 {
 
 h2 {
     font-size: 2.8rem;
+    line-height: 6.2rem;
 }
 
 h3 {
     font-size: 2.5rem;
+    line-height: 3.6rem;
+    letter-spacing: 1.3px;
 }
 
 h4 {
     font-size: 1.5rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.8px;
 }
 
 button {
     font-size: 1.4rem;
+    line-height: 2.6rem;
 }
 
+p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.wrapper {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    background-color:#FDD908;
+    color: #000000;
+    text-align: center;
+}
 
 
 

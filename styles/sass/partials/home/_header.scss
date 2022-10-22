@@ -1,0 +1,37 @@
+@use "../global/variables";
+
+// Home Header Styles
+
+header {
+    background-image: url(../assets/home-header.jpg);
+     
+}
+
+// Home Navigation Styles
+.homeNav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: left;
+    }
+    li {
+        padding: 0 20px;
+    }
+    .home a {
+        text-decoration: underline;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+
+  

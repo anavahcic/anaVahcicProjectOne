@@ -2,103 +2,115 @@
 
 // Home About Section Styles
 
-.about,
-.vacation {
+.about {
     background-color: #EAFEFC;
-}
-
-.aboutFlex {
-    display: flex;
+    padding-top: 400px;
+    .aboutFlex1 {
+        display: flex;   
+    }
+    .aboutFlex2 {
+        display: flex;   
+    }
 }
 
 // Home Locations Section Styles
+.locations {
+    background-color: #0D457F;
 
-.programsFlex,
-.locationsFlex {
-    display: flex;
-}
+    .programsFlex,
+    .locationsFlex {
+        display: flex;
+    }
+    
+    .imgContainer1,
+    .textContainer1 {
+        width: 50%;
+         img {
+            position: absolute;
+            left: -100px;
+         }
+    }
+    
+    .imgContainer2,
+    .textContainer2 {
+        width: 50%;
+         img {
+            position: absolute;
+         }
+    }
 
-.imgContainer1,
-.textContainer1 {
-    width: 50%;
-     img {
-        position: absolute;
-        left: -100px;
-     }
-}
+    .imgContainer1 img {
+        box-shadow: 10px 10px yellow;
+    }
 
-.imgContainer2,
-.textContainer2 {
-    width: 50%;
-     img {
-        position: absolute;
-     }
+    .imgContainer2 img {
+        box-shadow: -10px 10px yellow;
+        right: 0;
+    
+    }
+
 }
 
 
 
 // Home Vacation Section Styles
 
-.findOutMore {
-    background-color: variables.$primary;
-    align-items: center;
-   
-}
-
- .vacationFlex {
-    h2 {
+.vacation {
+    background-color: #EAFEFC;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    .wrapperContainer {
         text-align: center;
         color: variables.$tertiary;
-        }
-    p {
         text-align: center;
+        button {
+            background-color: variables.$primary;
+        }
     }
 }
-
-.imgContainer3 {
-    margin-right: 100px;
-    margin-top: 100px;
-}
-
-.tripFlex {
-    display: flex;
-    h2 {
+ 
+// Home Trip Section Styles
+.trip {
+    background-color: #EAFEFC;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    .tripFlex {
+        display: flex;
+        padding-left: 100px;
+    .imgContainer3 {
+        margin-right: 100px;
+        margin-top: 100px;
+            }
+    .textContainer3 {
+        h2 {
         text-align: left;
         color: variables.$tertiary; 
-    }
-    p {
+        }
+        p {
         text-align: left;
-    }
-
+        padding-bottom: 50px;  
+        }
 }
-
-.textContainer3 {
-    padding-bottom: 100px;
-}
-
-
-
-// Home Gallery Section Styles
-
-.gallery {
-    background-color: #0D457F;
-}
-
-.galleryFlex {
-    display: flex;
-    margin: 0;
-    img {
-        max-width: 80%;
-        padding: 50px 1px;   
-    }
-    li {
-        text-decoration: none;
-    }
     
-    }
+    .imgContainer3 img {
+        box-shadow: -10px 10px yellow;
+        }
 
 
-    
+    // Home Gallery Section Styles
 
-
-
+    .gallery {
+            background-color: #0D457F;
+        }
+        
+    .galleryFlex {
+        display: flex;
+        margin: 0;
+        img {
+            max-width: 80%;
+            padding: 50px 1px;   
+                }
+        li {
+            list-style-type: none;
+        } 
+              

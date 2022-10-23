@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boat Ride Adventures</title>
+    <script src="https://kit.fontawesome.com/323dbf2a01.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <title>Boat Ride Adventures</title>
 </head>
 <body>
     <!-- Header Section -->
@@ -19,7 +20,7 @@
         <div class="wrapper headerFlex">
             <nav class="homeNav">
                 <ul>
-                    <li class="home"><a href="#home">Home</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -37,23 +38,39 @@
     <main>
         <!-- About Section -->
         <section class="about" id="about">
-            <div class="wrapper aboutFlex">
+            <div class="aboutFlex1"><!-- This container is going to be flexed -->
+                <div class="iconContainer1">
+                    <i class="fa-solid fa-location-pin"></i>
+                </div><!-- END .iconContainer1 -->
                 <div class="textContainer1">
                     <h2>New Destinations</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dignissimos ipsam et, aliquid nam quia temporibus cupiditate totam iusto.</p>
-
-                    <h2>Blog</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, tenetur.</p>
-                </div> <!-- END .textContainer1 -->
-            
-                <div class="textContainer2">
-                    <h2>Community</h2>
+                </div><!-- END .textContainer1 -->
+                <div class="iconContainer2">
+                    <i class="fa-solid fa-people-group"></i>
+                </div><!-- END .iconContainer2 -->
+                </div class="textContainer2">
+                <h2>Community</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, tenetur.</p>
+                </div> <!-- END .textContainer2 -->
+            </div><!-- END .aboutFlex1 -->
+    
+            <div class="aboutFlex2">
+                <div class="iconContainer3">
+                    <i class="fa-solid fa-file"></i>
+                </div><!-- END .iconContainer3 -->
+                <div class="textContainer3">
+                    <h2>Blog<h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, expedita dolorum? Dolorum laborum veritatis earum.</p>
-
+                </div><!-- END .textContainer3  -->
+                <div class="iconContainer4">
+                    <i class="fa-solid fa-phone-flip"></i>
+                </div><!-- END .iconContainer4 -->
+                <div class="textContainer4">
                     <h2>Get In Touch</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nisi?</p>
-                </div><!-- END .textContainer2  -->
-            </div><!-- END .wrapper aboutFlex-->
+                </div><!-- END .textContainer3  -->
+            </div> <!-- END .aboutFlex2-->
         </section><!-- END .about section -->
 
         <section class="locations" id="locations">
@@ -70,41 +87,45 @@
                 </div><!-- END .programsFlex -->
 
             <div class="locationsFlex">
-                <div class="imgContainer2">
-                    <img src="./assets/right-image.jpg" alt="Tip of a wooden boat deck with white rope and crystal clear water">
-                </div> <!-- END .imgContainer2 -->
                 <div class="textContainer2">
                     <h3>New Locations</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illum ab quam sit, adipisci quas, eum laboriosam consequuntur natus doloremque labore necessitatibus cupiditate eius, nihil iste ipsam sequi minima veniam.</p>
                     <button>Read More</button>
                 </div><!-- END .textContainer2 -->
+                <div class="imgContainer2">
+                    <img src="./assets/right-image.jpg" alt="Tip of a wooden boat deck with white rope and crystal clear water">
+                </div> <!-- END .imgContainer2 -->
             </div><!-- END .locationsFlex -->
         </section> <!-- END .locations section -->
 
         <!-- Vacation section -->
         <section class="vacation" id="vacation">
-            <div class="wrapper">
-                <div class="vacationFlex">
-                    <h2>Extra vacation days?</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati fugiat veritatis officia accusamus excepturi sapiente? Quisquam sed iusto doloribus quibusdam illo adipisci quis cum dignissimos sequi. Accusantium doloribus quidem voluptatum tempore labore doloremque quae! Aut recusandae quis maiores officia quam?</p>
-                    <button class="findOutMore">Find Out More</button>
-                </div> <!-- END .vacationFlex -->
-
-
-                <div class="tripFlex">
-                    <div class="imgContainer3">
-                    <img src="./assets/small-box.jpg" alt="Woman with long dark brown hair and a black hat looking at the mountains infront of her">
-                    </div><!-- END .imgContainer3 -->
-            
-                    <div class="textContainer3">
-                    <h2>Win Trip Of A Lifetime</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem error perferendis omnis at, pariatur asperiores blanditiis rem amet et reiciendis assumenda eos impedit facere possimus porro voluptatem atque! Beatae natus sed ab cumque at temporibus, voluptatum expedita distinctio amet, in perferendis eos veniam, libero rem. Reiciendis officia ipsum aspernatur.</p>
-                    <button>Find Out More</button>
-                    </div><!-- END .textContainer3 -->
-                </div>
-                <!-- END .tripContainer -->
-            </div><!-- END .wrapper -->
+            <div class="wrapperContainer">
+                <h2>Extra vacation days?</h2>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati fugiat veritatis officia accusamus excepturi sapiente? Quisquam sed iusto doloribus quibusdam illo adipisci quis cum dignissimos sequi. Accusantium doloribus quidem voluptatum tempore labore doloremque quae! Aut recusandae quis maiores officia quam?</p>
+                <button>Find Out More</button>
+            </div>
         </section><!-- END .vacation section -->
+        
+        <!-- Banner Section -->
+        <section class="banner">
+            <img src="./assets/banner.jpg" alt="">
+        </section><!-- END .banner section -->
+
+
+       <section class="trip">
+           <div class="tripFlex">
+               <div class="imgContainer3">
+               <img src="./assets/small-box.jpg" alt="Woman with long dark brown hair and a black hat looking at the mountains infront of her">
+               </div><!-- END .imgContainer3 -->
+
+               <div class="textContainer3">
+               <h2>Win Trip Of A Lifetime</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem error perferendis omnis at, pariatur asperiores blanditiis rem amet et reiciendis assumenda eos impedit facere possimus porro voluptatem atque! Beatae natus sed ab cumque at temporibus, voluptatum expedita distinctio amet, in perferendis eos veniam, libero rem. Reiciendis officia ipsum aspernatur.</p>
+               <button>Find Out More</button>
+               </div><!-- END .textContainer3 -->
+            </div> <!-- END .tripFlex-->
+       </section>  <!--END .trip section  -->
 
         <!-- Gallery Section -->
         <section class="gallery" id="gallery">

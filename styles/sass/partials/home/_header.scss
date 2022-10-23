@@ -6,47 +6,53 @@ header {
     background-image: url(../assets/home-header.jpg);
     background-repeat: no-repeat;
     object-fit: cover;
-    max-height: max-content;
-    h1 {
-        margin: 0;
-    }
-     
-}
-
-.headerImgContainer {
-    position: absolute;
-    right: 0%;
-    top: 0%;
-    margin-top: 200px;
-}
-
-// Home Navigation Styles
-.homeNav {
-    width: 100%;
-    top: 0;
-    margin: 0;
+    height: 700px;
     .wrapper {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         padding: 20px 0;
+        height: 100%;
     }
-    ul {
-        display: flex;
-        list-style: none;
-        justify-content: left;
-        margin-top: 0;
-    }
-    li {
-        padding: 0 20px;
-    }
-    .home a {
-        text-decoration: underline;
-        
-    }
-    a {
-        text-decoration: none;
-    }
-}
+    
+    
+    
+    // Home Navigation Styles
+    .homeNav {
+        width: 100%;
+        top: 0;
+        margin: 0;
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: left;
+            margin-top: 0;
+            li {
+                padding: 0 20px;
+            }
+            a {
+                text-decoration: none;
 
+            }
+            a:hover,
+            .active {
+                text-decoration: underline;
+                text-decoration-color: variables.$primary;
+            }
+        }  
+    }
+    
+    h1 {
+        margin-top: auto;
+        align-self:flex-start;
+        align-self: flex-end;
+    }
+    
+    }
 
+    .headerImgContainer {
+    position: absolute;
+    bottom: -25%;
+    right: 0;
+    
+    }
   

@@ -247,6 +247,7 @@ nav {
 h1, h2, h3, h4, button {
   font-family: "IM Fell English", serif;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -273,6 +274,10 @@ h4 {
 button {
   font-size: 1.4rem;
   line-height: 2.6rem;
+  background-color: #FDD908;
+  color: #0D457F;
+  text-align: center;
+  padding: 5px 10px;
 }
 
 p {
@@ -282,8 +287,8 @@ p {
 }
 
 .wrapper {
-  max-width: 1260px;
-  width: 100%;
+  max-width: 1080px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -292,15 +297,34 @@ footer {
   color: #000000;
   text-align: center;
 }
+footer p {
+  margin: 0;
+}
 
 header {
   background-image: url(../assets/home-header.jpg);
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+header h1 {
+  margin: 0;
+}
+
+.headerImgContainer {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  margin-top: 200px;
 }
 
 .homeNav {
-  position: fixed;
   width: 100%;
   top: 0;
+  margin: 0;
 }
 .homeNav .wrapper {
   display: -webkit-box;
@@ -319,6 +343,7 @@ header {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  margin-top: 0;
 }
 .homeNav li {
   padding: 0 20px;
@@ -341,28 +366,67 @@ header {
   display: flex;
 }
 
-li {
-  list-style: none;
-}
-li a {
-  text-decoration: none;
-}
-
-.vacation {
-  background-image: url(../../../../assets/banner.jpg);
-}
-.vacation .vacationFlex {
+.programsFlex,
+.locationsFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.vacation h2 {
+
+.imgContainer1,
+.textContainer1 {
+  width: 50%;
+}
+.imgContainer1 img,
+.textContainer1 img {
+  position: absolute;
+  left: -100px;
+}
+
+.imgContainer2,
+.textContainer2 {
+  width: 50%;
+}
+.imgContainer2 img,
+.textContainer2 img {
+  position: absolute;
+}
+
+.findOutMore {
+  background-color: #FDD908;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vacationFlex h2 {
   text-align: center;
-  text-transform: uppercase;
   color: #0D457F;
 }
-.vacation p {
+.vacationFlex p {
   text-align: center;
+}
+
+.imgContainer3 {
+  margin-right: 100px;
+  margin-top: 100px;
+}
+
+.tripFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tripFlex h2 {
+  text-align: left;
+  color: #0D457F;
+}
+.tripFlex p {
+  text-align: left;
+}
+
+.textContainer3 {
+  padding-bottom: 100px;
 }
 
 .gallery {
@@ -373,12 +437,12 @@ li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  margin: 0;
 }
 .galleryFlex img {
   max-width: 80%;
   padding: 50px 1px;
+}
+.galleryFlex li {
+  text-decoration: none;
 }

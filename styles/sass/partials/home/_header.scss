@@ -4,14 +4,27 @@
 
 header {
     background-image: url(../assets/home-header.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    max-height: max-content;
+    h1 {
+        margin: 0;
+    }
      
+}
+
+.headerImgContainer {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    margin-top: 200px;
 }
 
 // Home Navigation Styles
 .homeNav {
-    position: fixed;
     width: 100%;
     top: 0;
+    margin: 0;
     .wrapper {
         display: flex;
         justify-content: space-between;
@@ -21,12 +34,14 @@ header {
         display: flex;
         list-style: none;
         justify-content: left;
+        margin-top: 0;
     }
     li {
         padding: 0 20px;
     }
     .home a {
         text-decoration: underline;
+        
     }
     a {
         text-decoration: none;

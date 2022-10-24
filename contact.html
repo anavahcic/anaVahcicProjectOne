@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
     <title>Boat Ride Adventures</title>
 </head>
-
 <body>
     <!-- Header Section -->
     <header>
@@ -29,29 +28,45 @@
             </nav>
             <h1 class="blog">Get In Touch</h1>
         </div><!-- END .wrapper headerFlex-->
-    </header>
-
-    <!-- Main Section -->
+    </header><!-- Main Section -->
     <main>
         <div class="wrapper  contactFlex">
-            <div class="fontAwesome">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-
+            <div class="contactInfo">
+                <div class="fontAwesome">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div><!-- END .fontAwesome -->
+                
                 <p>info@email.com</p>
                 <p>123-456-7890</p>
                 <p>123 Queen Street West, Unit 10</p>
                 <p>Toronto, Ontario</p>
                 <p>M5V2D5</p>
-            </div>
-        </div>
+            </div><!-- END .contactInfo -->
 
+            <div class="contactForm">
+                <form action="#" method="#" class="absoluteBoxShadow" name="contactForm">
+
+                    <label for="userName">Name</label>
+                    <input type="text" id="userName" name="userName">
+
+                    <label for="email">Email Address</label>
+                    <input type="text" id="emailInput" name="emaiLInput">
+
+                    <label for="message">Message</label>
+                    <textarea name="userMessage" id="message" cols="30" rows="10">Message</textarea>
+
+                    <label for="terribleSecret">Submit</label>
+                    <input type="text" id="terribleSecret" name="terribleSecret">
+
+                    <button type="submit">Submit</button> 
+                </form>
+            </div><!-- END .contactForm -->
+        </div><!-- END .wrapper contactFlex -->
     </main>
     
-
-
     <!-- Footer Section -->
     <footer>
         <div class="wrapper">

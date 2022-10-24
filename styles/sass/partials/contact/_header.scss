@@ -1,1 +1,10 @@
 @use "../global/variables";
+
+//Contact Header Styles
+
+header {
+    background-image: url(../assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 700px;
+}

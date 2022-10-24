@@ -16,12 +16,10 @@
 // Home Locations Section Styles
 .locations {
     background-color: #0D457F;
-
     .programsFlex,
     .locationsFlex {
         display: flex;
     }
-    
     .imgContainer1,
     .textContainer1 {
         width: 50%;
@@ -30,7 +28,6 @@
             left: -100px;
          }
     }
-    
     .imgContainer2,
     .textContainer2 {
         width: 50%;
@@ -42,16 +39,11 @@
     .imgContainer1 img {
         box-shadow: 10px 10px yellow;
     }
-
     .imgContainer2 img {
         box-shadow: -10px 10px yellow;
         right: 0;
-    
     }
-
 }
-
-
 
 // Home Vacation Section Styles
 
@@ -90,27 +82,25 @@
         text-align: left;
         padding-bottom: 50px;  
         }
-}
+    }
     
     .imgContainer3 img {
         box-shadow: -10px 10px yellow;
         }
 
-
     // Home Gallery Section Styles
 
     .gallery {
-            background-color: #0D457F;
-        }
-        
+            background-color: #0D457F;  
     .galleryFlex {
         display: flex;
         margin: 0;
+        }
         img {
             max-width: 80%;
             padding: 50px 1px;   
-                }
+        }
         li {
             list-style-type: none;
-        } 
-              
+        }
+    }

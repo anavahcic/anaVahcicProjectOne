@@ -339,6 +339,7 @@ header .homeNav ul li {
 }
 header .homeNav ul a {
   text-decoration: none;
+  color: #FFFFFF;
 }
 header .homeNav ul a:hover,
 header .homeNav ul .active {
@@ -353,12 +354,13 @@ header h1 {
   -ms-flex-item-align: end;
       align-self: flex-end;
   color: #FDD908;
+  padding-bottom: 100px;
 }
 
 .headerImgContainer {
   position: absolute;
   bottom: -25%;
-  right: 0;
+  right: -20%;
 }
 
 .about {
@@ -426,6 +428,10 @@ header h1 {
   background-color: #FDD908;
 }
 
+.banner img {
+  max-width: 100%;
+}
+
 .trip {
   background-color: #EAFEFC;
   padding-top: 60px;
@@ -440,6 +446,7 @@ header h1 {
 .trip .imgContainer3 {
   margin-right: 100px;
   margin-top: 100px;
+  max-width: 100%;
 }
 .trip .textContainer3 h2 {
   text-align: left;
@@ -450,12 +457,14 @@ header h1 {
   padding-bottom: 50px;
 }
 .trip .imgContainer3 img {
+  max-width: 50%;
   -webkit-box-shadow: -10px 10px yellow;
           box-shadow: -10px 10px yellow;
 }
 
 .gallery {
   background-color: #0D457F;
+  padding: 40px 20px;
 }
 
 .galleryFlex {

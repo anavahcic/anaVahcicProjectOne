@@ -29,12 +29,14 @@ header {
             }
             a {
                 text-decoration: none;
-
+                color: variables.$quaternary;
+                
             }
             a:hover,
             .active {
                 text-decoration: underline;
                 text-decoration-color: variables.$primary;
+                
             }
         }  
     }
@@ -44,6 +46,7 @@ header {
         align-self:flex-start;
         align-self: flex-end;
         color: variables.$primary;
+        padding-bottom: 100px;
     }
     
     }
@@ -51,7 +54,6 @@ header {
     .headerImgContainer {
     position: absolute;
     bottom: -25%;
-    right: 0;
-    
+    right: -20%;
     }
   

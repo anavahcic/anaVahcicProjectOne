@@ -1,5 +1,8 @@
 @use "./partials/global/setup";
 @use "./partials/global/typography";
 @use "./partials/global/variables";
-@use "./partials/home/header";
-@use "./partials/home/main";
+@use "./partials/homeHeader";
+@use "./partials/homeMain";
+@use "./partials/contactHeader";
+@use "./partials/contactMain";
+

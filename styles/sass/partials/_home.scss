@@ -1,5 +1,60 @@
 @use "./global/variables";
 
+// Home Header Styles
+
+    #home {
+        background-image: url(../assets/home-header.jpg);
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height: fit-content;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        height: 100%;
+    
+    
+    // Home Navigation Styles
+    .homeNav {
+        width: 100%;
+        top: 0;
+        margin: 0;
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: left;
+            margin-top: 0;
+            li {
+                padding: 0 20px;
+            }
+            a {
+                text-decoration: none;
+                color: variables.$quaternary;  
+            }
+            a:hover {
+                text-decoration: underline;
+                text-decoration-color: variables.$primary;  
+            }
+        }  
+    }
+    
+    h1 {
+        margin-top: 200px;
+        align-self:flex-start;
+        align-self: flex-end;
+        color: variables.$primary;
+    }
+    
+    }
+
+    .headerImgContainer {
+    position: absolute;
+    bottom: -25%;
+    right: -20%;
+    }
+  
+
 // Home About Section Styles
 
 .about {
@@ -23,6 +78,10 @@
     .locationsFlex {
         display: flex;
     }
+    h3, p {
+        color: variables.$quaternary;
+    }
+   
     .imgContainer1,
     .textContainer1 {
         width: 50%;
@@ -37,6 +96,15 @@
          img {
             position: absolute;
          }
+    }
+
+    .textContainer2 {
+        h2, p {
+           text-align: right;
+        }
+    }
+    button {
+       margin-left: 300px;
     }
 
     .imgContainer1 img {

@@ -302,7 +302,7 @@ footer p {
 }
 
 header {
-  background-image: url(../../assets/home-header.jpg);
+  background-image: url(../assets/home-header.jpg);
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
@@ -500,4 +500,44 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
   height: 700px;
+}
+
+header {
+  background-image: url(../assets/blog-header.jpg);
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+}
+header h1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #FFFFFF;
+  margin-bottom: 300px;
+}
+
+.blogNav {
+  width: 100%;
+  top: 0;
+  margin: 0;
+}
+.blogNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+.blogNav li {
+  padding: 0 20px;
+}
+.blogNav a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.blogNav a:hover,
+.blogNav .active {
+  text-decoration: underline;
+  color: #FDD908;
 }

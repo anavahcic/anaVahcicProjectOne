@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <title>Boat Ride Adventures</title>
 </head>
 <body>
@@ -38,41 +38,54 @@
     <main>
         <!-- About Section -->
         <section class="about" id="about">
-            <div class="aboutFlex1"><!-- This container is going to be flexed -->
-                <div class="iconContainer1">
-                    <i class="fa-solid fa-location-pin"></i>
-                </div><!-- END .iconContainer1 -->
-                <div class="textContainer1">
-                    <h2>New Destinations</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dignissimos ipsam et, aliquid nam quia temporibus cupiditate totam iusto.</p>
-                </div><!-- END .textContainer1 -->
-                <div class="iconContainer2">
-                    <i class="fa-solid fa-people-group"></i>
-                </div><!-- END .iconContainer2 -->
-                </div class="textContainer2">
-                <h2>Community</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, tenetur.</p>
-                </div> <!-- END .textContainer2 -->
-            </div><!-- END .aboutFlex1 -->
-    
-            <div class="aboutFlex2">
-                <div class="iconContainer3">
-                    <i class="fa-solid fa-file"></i>
-                </div><!-- END .iconContainer3 -->
-                <div class="textContainer3">
-                    <h2>Blog<h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, expedita dolorum? Dolorum laborum veritatis earum.</p>
-                </div><!-- END .textContainer3  -->
-                <div class="iconContainer4">
-                    <i class="fa-solid fa-phone-flip"></i>
-                </div><!-- END .iconContainer4 -->
-                <div class="textContainer4">
-                    <h2>Get In Touch</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nisi?</p>
-                </div><!-- END .textContainer3  -->
-            </div> <!-- END .aboutFlex2-->
+            <div class="wrapper aboutFlex">
+                <div class="aboutFlex1">
+                    <div class="wrapper newDestinations">
+                        <div class="iconContainer1">
+                            <i class="fa-solid fa-location-pin"></i>
+                        </div><!-- END .iconContainer1 -->
+                        <div class="textContainer1">
+                            <h2>New Destinations</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dignissimos ipsam et, aliquid nam quia temporibus cupiditate totam iusto.</p>
+                        </div><!-- END .textContainer1 -->
+                    </div><!-- END. wrapper newDestinations -->
+                    
+                    <div class="wrapper community">
+                        <div class="iconContainer2">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div><!-- END .iconContainer2 -->
+                        </div class="textContainer2">
+                            <h2>Community</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, tenetur.</p>
+                        </div> <!-- END .textContainer2 -->
+                    </div><!-- END. wrapper Community -->
+                </div><!-- END .aboutFlex1 -->
+        
+                <div class="aboutFlex2">
+                    <div class="wrapper blog">
+                        <div class="iconContainer3">
+                            <i class="fa-solid fa-file"></i>
+                        </div><!-- END .iconContainer3 -->
+                        <div class="textContainer3">
+                            <h2>Blog<h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit earum, sit vitae voluptates aliquid hic.</p>
+                        </div><!-- END .textContainer3  -->
+                    </div> <!-- END .wrapper blog -->
+                   
+                    <div class="wrapper">
+                        <div class="iconContainer4">
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div><!-- END .iconContainer4 -->
+                         <div class="textContainer4">
+                            <h2>Get In Touch</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nisi?</p>
+                        </div><!-- END .textContainer3  -->
+                    </div> <!-- END .wrapper getInTouch --> 
+                </div> <!-- END .aboutFlex2-->
+            </div><!-- END .wrapper aboutFlex -->
         </section><!-- END .about section -->
 
+        <!-- Locations Section -->
         <section class="locations" id="locations">
             <div class="wrapper">
                 <div class="programsFlex">

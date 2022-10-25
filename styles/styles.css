@@ -245,7 +245,7 @@ nav {
 }
 
 h1, h2, h3, h4, button {
-  font-family: "IM Fell English", serif;
+  font-family: "IM Fell English SC", serif;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -302,11 +302,13 @@ footer p {
 }
 
 header {
-  background-image: url(../assets/home-header.jpg);
+  background-image: url(../../assets/home-header.jpg);
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 700px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 header .wrapper {
   display: -webkit-box;
@@ -371,11 +373,19 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .about .aboutFlex2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .locations {
@@ -430,6 +440,7 @@ header h1 {
 
 .banner img {
   max-width: 100%;
+  margin: 0 auto;
 }
 
 .trip {
@@ -441,12 +452,18 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 100px;
+  max-width: 90%;
+  margin: 0 auto;
 }
-.trip .imgContainer3 {
+.trip .imgContainer3 img {
   margin-right: 100px;
   margin-top: 100px;
   max-width: 100%;
+  -webkit-box-shadow: -10px 10px yellow;
+          box-shadow: -10px 10px yellow;
+}
+.trip .textContainer3 {
+  max-width: 50%;
 }
 .trip .textContainer3 h2 {
   text-align: left;
@@ -455,11 +472,6 @@ header h1 {
 .trip .textContainer3 p {
   text-align: left;
   padding-bottom: 50px;
-}
-.trip .imgContainer3 img {
-  max-width: 50%;
-  -webkit-box-shadow: -10px 10px yellow;
-          box-shadow: -10px 10px yellow;
 }
 
 .gallery {
@@ -474,9 +486,8 @@ header h1 {
   margin: 0;
 }
 
-img {
+.gallery img {
   max-width: 80%;
-  padding: 50px 1px;
 }
 
 li {

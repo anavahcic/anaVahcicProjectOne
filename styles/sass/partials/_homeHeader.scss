@@ -3,10 +3,10 @@
 // Home Header Styles
 
 header {
-    background-image: url(../assets/home-header.jpg);
+    background-image: url(../../assets/home-header.jpg);
     background-repeat: no-repeat;
     object-fit: cover;
-    height: 700px;
+    height: fit-content;
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -29,8 +29,7 @@ header {
             }
             a {
                 text-decoration: none;
-                color: variables.$quaternary;
-                
+                color: variables.$quaternary;  
             }
             a:hover,
             .active {

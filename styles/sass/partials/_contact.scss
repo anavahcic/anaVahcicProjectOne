@@ -5,7 +5,6 @@
         background-image: url(../assets/contact-header.jpg);
         background-repeat: no-repeat;
         object-fit: cover;
-        height: 100vh;
         h1 {
             color: variables.$quaternary;
             margin-bottom: 300px;
@@ -14,7 +13,6 @@
         .wrapper {
             display: flex;
             flex-direction: column;
-            padding: 20px 0;
             height: 100%;
             margin: 0 auto;
         }
@@ -47,3 +45,40 @@
 main {
     background-color: variables.$secondary;
 }
+
+.contactFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+// Contact Form Styles
+form {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: variables.$tertiary;
+    box-shadow: 20px 20px variables.$primary;
+}
+
+input {
+        background-color: variables.$tertiary;
+        border-bottom: 1px soilid yellow;
+
+    }
+textarea {
+    display: block;
+    padding: 10px;
+    margin: 70px 20px 0 40px;
+    height: 40%;
+    width: 90%;
+    color: variables.$quaternary;
+    border: 1px solid yellow;
+    background-color: variables.$tertiary;
+}
+button {
+   margin: 50px 40px;
+   width: 90%;
+}                   
+      

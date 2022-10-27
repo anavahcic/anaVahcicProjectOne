@@ -42,3 +42,43 @@
         text-decoration-color: variables.$primary;  
     }
 }
+
+// Blog Form Styles
+
+form {
+    .blogFrom {        
+        position: relative;
+        width: 800px;
+        height: 600px;
+        padding: 1rem;
+        box-sizing: border-box;
+        background-color: variables.$secondary;
+        border: 1px solid variables.$primary;
+        box-shadow: 20px 20px variables.$primary;
+    }
+    input {
+        background-color: variables.$tertiary;
+        border-bottom: 1px soilid yellow;
+    }
+    textarea {
+        display: block;
+        padding: 10px;
+        margin: 70px 20px 0 40px;
+        height: 40%;
+        width: 90%;
+        color: variables.$quaternary;
+        border: 1px solid variables.$primary;
+        background-color: variables.$secondary;
+        color: variables.$body;
+    }
+    button {
+        .postComment {
+            margin: 50px 40px;
+            width: 90%;
+            color: variables.$primary;
+            background-color: variables.$tertiary;
+        }
+    }
+}
+
+

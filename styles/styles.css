@@ -553,12 +553,45 @@ li {
           text-decoration-color: #FDD908;
 }
 
+form .blogFrom {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #EAFEFC;
+  border: 1px solid #FDD908;
+  -webkit-box-shadow: 20px 20px #FDD908;
+          box-shadow: 20px 20px #FDD908;
+}
+form input {
+  background-color: #0D457F;
+  border-bottom: 1px soilid yellow;
+}
+form textarea {
+  display: block;
+  padding: 10px;
+  margin: 70px 20px 0 40px;
+  height: 40%;
+  width: 90%;
+  color: #FFFFFF;
+  border: 1px solid #FDD908;
+  background-color: #EAFEFC;
+  color: #000000;
+}
+form button .postComment {
+  margin: 50px 40px;
+  width: 90%;
+  color: #FDD908;
+  background-color: #0D457F;
+}
+
 #contact {
   background-image: url(../assets/contact-header.jpg);
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100vh;
 }
 #contact h1 {
   color: #FFFFFF;
@@ -573,7 +606,6 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 0;
   height: 100%;
   margin: 0 auto;
 }
@@ -606,4 +638,47 @@ li {
 
 main {
   background-color: #EAFEFC;
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+form {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #0D457F;
+  -webkit-box-shadow: 20px 20px #FDD908;
+          box-shadow: 20px 20px #FDD908;
+}
+
+input {
+  background-color: #0D457F;
+  border-bottom: 1px soilid yellow;
+}
+
+textarea {
+  display: block;
+  padding: 10px;
+  margin: 70px 20px 0 40px;
+  height: 40%;
+  width: 90%;
+  color: #FFFFFF;
+  border: 1px solid yellow;
+  background-color: #0D457F;
+}
+
+button {
+  margin: 50px 40px;
+  width: 90%;
 }

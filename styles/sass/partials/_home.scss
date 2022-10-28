@@ -2,12 +2,12 @@
 
 // Home Header Styles
 
-    #home {
-        background-image: url(../assets/home-header.jpg);
-        background-repeat: no-repeat;
-        object-fit: cover;
-        height: fit-content;
-    }
+ #home {
+    background-image: url(../assets/home-header.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: fit-content;
+ }
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -15,7 +15,7 @@
         height: 100%;
     
     
-    // Home Navigation Styles
+// Home Navigation Styles
     .homeNav {
         width: 100%;
         top: 0;
@@ -52,71 +52,95 @@
     position: absolute;
     bottom: -25%;
     right: -20%;
-    }
+}
   
 
 // Home About Section Styles
 
-.about {
-    background-color: #EAFEFC;
-    .aboutFlex1 {
-        display: flex;   
+    .about {
+        background-color: #EAFEFC;
         
+       .textBox01 {
+        width: 25px;
+        height:30px;
+        display: inline-block;
+        position: absolute;
+        left: -50px;
+        top: -3px;
+       }
+       .textBox02 {
+        width: 25px;
+        height:30px;
+        display: inline-block;
+        position: absolute;
+        left: -50px;
+        top: -3px;
+       }
+       .textBox03 {
+        width: 25px;
+        height:30px;
+        display: inline-block;
+        position: absolute;
+        left: -50px;
+        top: -3px;
+       }
+       .textBox04 {
+        width: 25px;
+        height:30px;
+        display: inline-block;
+        position: absolute;
+        left: -50px;
+        top: -3px;
+       }
     }
-    .aboutFlex2 {
-        display: flex;  
-       
-    }
-    
-}
 
 // Home Locations Section Styles
-.locations {
-    background-color: #0D457F;
-    .programsFlex,
-    .locationsFlex {
-        display: flex;
-    }
-    h3, p {
-        color: variables.$quaternary;
-    }
+    .locations {
+        background-color: #0D457F;
+        .programsFlex,
+        .locationsFlex {
+            display: flex;
+        }
+        h3, p {
+            color: variables.$quaternary;
+        }
    
-    .imgContainer1,
-    .textContainer1 {
-        width: 50%;
-         img {
-            position: relative;
-            left: -200px;
-            bottom:50px;
+         .imgContainer1,
+        .textContainer1 {
+            width: 50%;
+            img {
+                position: relative;
+                left: -200px;
+                bottom:50px;
+            }
          }
-    }
-    .imgContainer2,
-    .textContainer2 {
-        width: 50%;
-         img {
-            position: relative;
+         .imgContainer2,
+         .textContainer2 {
+            width: 50%;
+             img {
+             position: relative;
             left: 100px;
             top: 120px;
-         }
-    }
+            }
+        }
 
     .textContainer2 {
         h2, p {
            text-align: right;
+            }
         }
-    }
     button {
        margin-left: 300px;
-    }
+        }
 
     .imgContainer1 img {
         box-shadow: 10px 10px variables.$primary;
-    }
+        }
     .imgContainer2 img {
         box-shadow: -10px 10px variables.$primary;
         right: 0;
+        }
     }
-}
 
 // Home Vacation Section Styles
 
@@ -144,30 +168,29 @@
  
 // Home Trip Section Styles
 .trip {
-    background-color: #EAFEFC;
-    padding-top: 60px;
-    padding-bottom: 80px;
-    .tripFlex {
+    .wrapper {
         display: flex;
         flex-direction: row;
-        max-width: 90%;
-        margin: 0 auto;
-        }
-    .imgContainer3 img {
-        margin-right: 100px;
-        margin-top: 100px;
-        max-width: 100%;
-        box-shadow: -10px 10px variables.$primary;
-        } 
-    .textContainer3 {
-        max-width: 70%;
-        h2 {
-        text-align: left;
-        color: variables.$tertiary; 
-        }
-        p {
-        text-align: left;
-        padding-bottom: 50px;  
+        width: 80%;
+        background-color: #EAFEFC;
+        padding-top: 60px;
+        padding-bottom: 80px;
+        .imgContainer3 img {
+            margin-right: 100px;
+            margin-top: 100px;
+            max-width: 100%;
+            box-shadow: -10px 10px variables.$primary;
+            } 
+        .textContainer3 {
+            max-width: 70%;
+            h2 {
+            text-align: left;
+            color: variables.$tertiary; 
+            }
+            p {
+            text-align: left;
+            padding-bottom: 50px;  
+            }
         }
     }
 }

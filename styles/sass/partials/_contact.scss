@@ -5,6 +5,7 @@
         background-image: url(../assets/contact-header.jpg);
         background-repeat: no-repeat;
         object-fit: cover;
+        position: relative;
         h1 {
             color: variables.$quaternary;
             margin-bottom: 300px;
@@ -52,33 +53,87 @@ main {
 }
 
 // Contact Form Styles
-form {
-    position: relative;
-    width: 800px;
-    height: 600px;
-    padding: 1rem;
-    box-sizing: border-box;
-    background-color: variables.$tertiary;
-    box-shadow: 20px 20px variables.$primary;
-}
-
-input {
+    form {
+        position: relative;
+        width: 800px;
+        height: 600px;
+        padding: 1rem;
+        box-sizing: border-box;
         background-color: variables.$tertiary;
-        border-bottom: 1px soilid yellow;
-
+        box-shadow: 20px 20px variables.$primary;
     }
-textarea {
-    display: block;
-    padding: 10px;
-    margin: 70px 20px 0 40px;
-    height: 40%;
-    width: 90%;
-    color: variables.$quaternary;
-    border: 1px solid yellow;
-    background-color: variables.$tertiary;
-}
-button {
-   margin: 50px 40px;
-   width: 90%;
-}                   
-      
+
+    input[type="text"] {
+        border: 0;
+        border-bottom: 1px solid variables.$primary;
+        outline: 0; 
+      }
+
+      .userName {
+        display: flex;
+        flex-direction: column;
+        color: white;
+      }
+
+      input[type="email"] {
+        border: 0;
+        border-bottom: 1px solid variables.$primary;
+        outline: 0;
+      }
+
+      .userEmail {
+        display: flex;
+        flex-direction: column;
+        color: white;
+      }
+
+
+      .formContainer {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      textarea  {
+        display: block;
+        padding: 10px;
+        margin: 70px 20px 0 40px;
+        height: 40%;
+        width: 90%;
+        color: variables.$quaternary;
+        border: 1px solid variables.$primary;
+        background-color: variables.$tertiary;
+        
+    }
+    .contact {
+        background-color: variables.$tertiary;
+        color: white;
+    }
+    
+    
+    .contactForm button {
+        margin: 50px 40px;
+        width: 90%;
+        
+    }
+       
+    
+    // Contact Information and Icons Styles
+    
+    .addressInfo {
+        margin: 0;
+        .infoEmail {
+            padding: 20px 0;
+        }
+        p {
+            margin: 0 0;
+            padding: 0 0;
+            font-size: small;
+        }
+    }
+
+    .fontAwesome i {
+        justify-content: space-evenly;
+        padding: 5px;
+        color: variables.$tertiary;
+    }
+

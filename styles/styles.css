@@ -366,7 +366,6 @@ footer p {
 
 .about {
   background-color: #EAFEFC;
-  padding-top: 400px;
 }
 .about .aboutFlex1 {
   display: -webkit-box;
@@ -423,12 +422,12 @@ footer p {
   margin-left: 300px;
 }
 .locations .imgContainer1 img {
-  -webkit-box-shadow: 10px 10px yellow;
-          box-shadow: 10px 10px yellow;
+  -webkit-box-shadow: 10px 10px #FDD908;
+          box-shadow: 10px 10px #FDD908;
 }
 .locations .imgContainer2 img {
-  -webkit-box-shadow: -10px 10px yellow;
-          box-shadow: -10px 10px yellow;
+  -webkit-box-shadow: -10px 10px #FDD908;
+          box-shadow: -10px 10px #FDD908;
   right: 0;
 }
 
@@ -467,8 +466,8 @@ footer p {
   margin-right: 100px;
   margin-top: 100px;
   max-width: 100%;
-  -webkit-box-shadow: -10px 10px yellow;
-          box-shadow: -10px 10px yellow;
+  -webkit-box-shadow: -10px 10px #FDD908;
+          box-shadow: -10px 10px #FDD908;
 }
 .trip .textContainer3 {
   max-width: 50%;
@@ -592,6 +591,7 @@ form button .postComment {
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
 }
 #contact h1 {
   color: #FFFFFF;
@@ -662,9 +662,47 @@ form {
           box-shadow: 20px 20px #FDD908;
 }
 
-input {
-  background-color: #0D457F;
-  border-bottom: 1px soilid yellow;
+input[type=text] {
+  border: 0;
+  border-bottom: 1px solid #FDD908;
+  outline: 0;
+}
+
+.userName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+input[type=email] {
+  border: 0;
+  border-bottom: 1px solid #FDD908;
+  outline: 0;
+}
+
+.userEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 textarea {
@@ -674,11 +712,36 @@ textarea {
   height: 40%;
   width: 90%;
   color: #FFFFFF;
-  border: 1px solid yellow;
+  border: 1px solid #FDD908;
   background-color: #0D457F;
 }
 
-button {
+.contact {
+  background-color: #0D457F;
+  color: white;
+}
+
+.contactForm button {
   margin: 50px 40px;
   width: 90%;
+}
+
+.addressInfo {
+  margin: 0;
+}
+.addressInfo .infoEmail {
+  padding: 20px 0;
+}
+.addressInfo p {
+  margin: 0 0;
+  padding: 0 0;
+  font-size: small;
+}
+
+.fontAwesome i {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 5px;
+  color: #0D457F;
 }

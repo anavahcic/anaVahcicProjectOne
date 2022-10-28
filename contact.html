@@ -20,19 +20,19 @@
         <div class="wrapper headerFlex">
             <nav class="contactNav">
                 <ul>
-                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="blog.html" target="_blank">Blog</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <h1 class="getInTouch">Get In Touch</h1>
         </div><!-- END .wrapper headerFlex-->
-    </header>
+     </header>
     
     <!-- Main Section -->
     <main>
-        <div class="wrapper  contactFlex">
+        <div class="wrapper contactFlex">
             <div class="contactInfo">
                 <div class="fontAwesome">
                     <i class="fa-brands fa-facebook-f"></i>
@@ -40,25 +40,31 @@
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-whatsapp"></i>
                 </div><!-- END .fontAwesome -->
-                
-                <p>info@email.com</p>
-                <p>123-456-7890</p>
-                <p>123 Queen Street West, Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V2D5</p>
+
+                <div class="addressInfo">
+                    <p class="infoEmail">info@email.com</p>
+                    <p>123-456-7890 123<br> Queen Street West, Unit 10<br>Toronto, Ontario<br>M5V2D5</p> 
+                </div><!-- END .addressInfo -->
             </div><!-- END .contactInfo -->
 
             <div class="contactForm">
                 <form action="#" method="#" class="contactForm" name="contactForm">
 
-                    <label for="userName"></label>
-                    <input type="text" id="userName" name="userName">
-
-                    <label for="email"></label>
-                    <input type="email" id="userEmail" name="userEmail">
+                    <div class="formContainer">
+                        <div class="userName">
+                            <label for="userName">Name</label>
+                            <input type="text" id="userName" name="userName">
+                        </div><!-- END .userName -->
+    
+                        <div class="userEmail">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="userEmail" name="userEmail">
+                        </div><!-- END .userEmail -->
+                    </div><!-- END .formContainer -->
 
                     <label for="message"></label>
-                    <textarea name="userMessage" id="message" cols="30" rows="10">Message</textarea>
+
+                    <textarea class="contact" name="userMessage" id="message" cols="30" rows="10">Message</textarea>
 
                     <button type="submit">Submit</button> 
                 </form>
@@ -68,7 +74,7 @@
     
     <!-- Footer Section -->
     <footer>
-        <div class="wrapper">
+        <div class="wrapperFooter">
             <p>Copyright 2019 HackerYou</p>
         </div>
     </footer>

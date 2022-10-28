@@ -61,11 +61,11 @@
     background-color: #EAFEFC;
     .aboutFlex1 {
         display: flex;   
-        flex-direction: row;
+        
     }
     .aboutFlex2 {
         display: flex;  
-        flex-direction: row; 
+       
     }
     
 }
@@ -85,15 +85,18 @@
     .textContainer1 {
         width: 50%;
          img {
-            position: absolute;
-            left: -100px;
+            position: relative;
+            left: -200px;
+            bottom:50px;
          }
     }
     .imgContainer2,
     .textContainer2 {
         width: 50%;
          img {
-            position: absolute;
+            position: relative;
+            left: 100px;
+            top: 120px;
          }
     }
 
@@ -146,6 +149,7 @@
     padding-bottom: 80px;
     .tripFlex {
         display: flex;
+        flex-direction: row;
         max-width: 90%;
         margin: 0 auto;
         }
@@ -156,7 +160,7 @@
         box-shadow: -10px 10px variables.$primary;
         } 
     .textContainer3 {
-        max-width: 50%;
+        max-width: 70%;
         h2 {
         text-align: left;
         color: variables.$tertiary; 

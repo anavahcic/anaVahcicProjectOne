@@ -17,7 +17,7 @@
 <body>
     <!-- Header Section -->
     <header id="contact">
-        <div class="wrapper headerFlex">
+        <div class="wrapper">
             <nav class="contactNav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -66,7 +66,7 @@
 
                     <textarea class="contact" name="userMessage" id="message" cols="30" rows="10">Message</textarea>
 
-                    <button type="submit">Submit</button> 
+                    <button id="submit" type="submit">Submit</button> 
                 </form>
             </div><!-- END .contactForm -->
         </div><!-- END .wrapper contactFlex -->
@@ -78,6 +78,18 @@
             <p>Copyright 2019 HackerYou</p>
         </div>
     </footer>
-
+    <script>
+        // STEP 1: Listen for when the form submits
+        // STEP 2: On submit, display a "Thank you for submitting" message
+        
+        const button = function() {
+            event.preventDefault();
+            console.log("Thank you!");
+            alert("Thank you for submitting!");
+        };
+        document.getElementById("submit").onclick = function() {
+            button();
+        }
+    </script>
 </body>
 </html>

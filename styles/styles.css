@@ -312,6 +312,8 @@ footer p {
 }
 
 .wrapper {
+  padding: 20px 0;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,8 +321,6 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 0;
-  height: 100%;
 }
 .wrapper .homeNav {
   width: 100%;
@@ -349,7 +349,8 @@ footer p {
   -webkit-text-decoration-color: #FDD908;
           text-decoration-color: #FDD908;
 }
-.wrapper h1 {
+
+h1.boatRideAdventures {
   margin-top: 200px;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -524,24 +525,6 @@ li {
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100vh;
-}
-#blog h1 {
-  color: #FFFFFF;
-  margin-bottom: 300px;
-  margin-right: 750px;
-}
-#blog .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 20px 0;
-  height: 100%;
-  margin: 0 auto;
 }
 
 .blogNav {
@@ -570,7 +553,12 @@ li {
           text-decoration-color: #FDD908;
 }
 
-form .blogFrom {
+h1.blogPage {
+  color: #FFFFFF;
+  margin-right: 750px;
+}
+
+form.blogFrom {
   position: relative;
   width: 800px;
   height: 600px;
@@ -579,14 +567,42 @@ form .blogFrom {
           box-sizing: border-box;
   background-color: #EAFEFC;
   border: 1px solid #FDD908;
-  -webkit-box-shadow: 20px 20px #FDD908;
-          box-shadow: 20px 20px #FDD908;
 }
-form input {
-  background-color: #0D457F;
-  border-bottom: 1px soilid yellow;
+
+input[type=text] {
+  border: 0;
+  border-bottom: 1px solid #FDD908;
+  outline: 0;
 }
-form textarea {
+
+.userName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+input[type=email] {
+  border: 0;
+  border-bottom: 1px solid #FDD908;
+  outline: 0;
+}
+
+.formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 50px 0 50px;
+}
+
+textarea {
   display: block;
   padding: 10px;
   margin: 70px 20px 0 40px;
@@ -597,7 +613,11 @@ form textarea {
   background-color: #EAFEFC;
   color: #000000;
 }
-form button .postComment {
+textarea .comment {
+  background-color: #EAFEFC;
+}
+
+button.postComment {
   margin: 50px 40px;
   width: 90%;
   color: #FDD908;
@@ -609,23 +629,9 @@ form button .postComment {
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
-}
-#contact h1 {
-  color: #FFFFFF;
-  margin-bottom: 300px;
-  margin-right: 250px;
-}
-#contact .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-  margin: 0 auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .contactNav {
@@ -654,6 +660,10 @@ form button .postComment {
           text-decoration-color: #FDD908;
 }
 
+h1.getInTouch {
+  color: #FFFFFF;
+}
+
 main {
   background-color: #EAFEFC;
 }
@@ -680,6 +690,7 @@ form {
           box-shadow: 20px 20px #FDD908;
   bottom: 200px;
   left: 200px;
+  margin-top: 100px;
 }
 
 input[type=text] {

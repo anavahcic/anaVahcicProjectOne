@@ -5,80 +5,84 @@
         background-image: url(../assets/blog-header.jpg);
         background-repeat: no-repeat;
         object-fit: cover;
-        height: 100vh;
-        h1 {
-            color: variables.$quaternary;
-            margin-bottom: 300px;
-            margin-right: 750px;
-        }
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-            padding: 20px 0;
-            height: 100%;
-            margin: 0 auto;
-        }
     }
-
-
+    
 // Blog Navigation styles
-.blogNav {
-    width: 100%;
-    top: 0;
-    margin: 0;
-    ul {
-        display: flex;
-        justify-content: left;
+    .blogNav {
+        width: 100%;
+        top: 0;
+        margin: 0;
+        ul {
+            display: flex;
+            justify-content: left;
+        }
+        li {
+            padding: 0 20px;
+        }
+        a {
+            text-decoration: none;
+            color: variables.$quaternary;
+        }
+        a:hover {
+            text-decoration: underline;
+            text-decoration-color: variables.$primary;  
+        }
     }
-    li {
-        padding: 0 20px;
-    }
-    a {
-        text-decoration: none;
+    h1.blogPage  {
         color: variables.$quaternary;
+        margin-right: 750px;
     }
-    a:hover {
-        text-decoration: underline;
-        text-decoration-color: variables.$primary;  
-    }
-}
-
+    
 // Blog Form Styles
 
-form {
-    .blogFrom {        
-        position: relative;
-        width: 800px;
-        height: 600px;
-        padding: 1rem;
-        box-sizing: border-box;
-        background-color: variables.$secondary;
-        border: 1px solid variables.$primary;
-        box-shadow: 20px 20px variables.$primary;
+form.blogFrom { 
+    position: relative;
+    width: 800px;
+    height: 600px;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: variables.$secondary;
+    border: 1px solid variables.$primary;
+}
+    input[type="text"] {
+        border: 0;
+        border-bottom: 1px solid variables.$primary;
+        outline: 0; 
     }
-    input {
-        background-color: variables.$tertiary;
-        border-bottom: 1px soilid yellow;
+    .userName {
+            display: flex;
+            flex-direction: column;
+             color: white;
+    }
+    input[type="email"] {
+            border: 0;
+            border-bottom: 1px solid variables.$primary;
+            outline: 0;
+    }
+        
+    .formContainer {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 50px 0 50px;
     }
     textarea {
-        display: block;
-        padding: 10px;
-        margin: 70px 20px 0 40px;
-        height: 40%;
-        width: 90%;
-        color: variables.$quaternary;
-        border: 1px solid variables.$primary;
-        background-color: variables.$secondary;
-        color: variables.$body;
-    }
-    button {
-        .postComment {
+            display: block;
+            padding: 10px;
+            margin: 70px 20px 0 40px;
+            height: 40%;
+            width: 90%;
+            color: variables.$quaternary;
+            border: 1px solid variables.$primary;
+            background-color: variables.$secondary;
+            color: variables.$body;
+            .comment {
+                background-color: variables.$secondary;
+            } 
+    }  
+    button.postComment {
             margin: 50px 40px;
             width: 90%;
             color: variables.$primary;
             background-color: variables.$tertiary;
-        }
+
     }
-}
-
-

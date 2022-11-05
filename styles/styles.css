@@ -252,17 +252,20 @@ h1, h2, h3, h4, button {
 
 h1 {
   font-size: 4.9rem;
+  font-style: italic;
 }
 
 h2 {
   font-size: 2.8rem;
   line-height: 6.2rem;
+  font-style: italic;
 }
 
 h3 {
   font-size: 2.5rem;
   line-height: 3.6rem;
   letter-spacing: 1.3px;
+  font-style: italic;
 }
 
 h4 {
@@ -278,6 +281,7 @@ button {
   color: #0D457F;
   text-align: center;
   padding: 5px 10px;
+  margin: 0 auto;
 }
 
 p {
@@ -361,44 +365,53 @@ h1.boatRideAdventures {
 
 .headerImgContainer {
   position: absolute;
-  bottom: -25%;
-  right: -20%;
+  top: 16%;
+  left: 58%;
 }
 
 .about {
   background-color: #EAFEFC;
+  padding-top: 200px;
+  padding-bottom: 100px;
 }
-.about .textBox01 {
-  width: 25px;
-  height: 30px;
-  display: inline-block;
-  position: absolute;
-  left: -50px;
-  top: -3px;
+.about h2 {
+  color: #0D457F;
+  font-size: 2rem;
+  font-style: italic;
 }
-.about .textBox02 {
-  width: 25px;
-  height: 30px;
-  display: inline-block;
-  position: absolute;
-  left: -50px;
-  top: -3px;
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
-.about .textBox03 {
-  width: 25px;
-  height: 30px;
-  display: inline-block;
-  position: absolute;
-  left: -50px;
-  top: -3px;
+.flexContainer .icon1,
+.flexContainer .icon2,
+.flexContainer .icon3,
+.flexContainer .icon4 {
+  padding-top: 65px;
 }
-.about .textBox04 {
-  width: 25px;
-  height: 30px;
-  display: inline-block;
-  position: absolute;
-  left: -50px;
-  top: -3px;
+
+.aboutContainer1,
+.aboutContainer2,
+.aboutContainer3,
+.aboutContainer4 {
+  width: 50%;
+}
+
+.aboutContainer1,
+.aboutContainer2,
+.aboutContainer3,
+.aboutContainer4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .locations {
@@ -454,13 +467,10 @@ h1.boatRideAdventures {
   padding-top: 60px;
   padding-bottom: 80px;
 }
-.vacation .wrapperContainer {
+.vacation .wrapper {
   text-align: center;
   color: #0D457F;
   text-align: center;
-}
-.vacation .wrapperContainer button {
-  background-color: #FDD908;
 }
 
 .banner img {

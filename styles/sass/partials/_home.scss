@@ -37,9 +37,7 @@
                 text-decoration-color: variables.$primary;  
             }
         }  
-    }
-    
-    
+    }   
 }
 
 h1.boatRideAdventures {
@@ -50,8 +48,8 @@ h1.boatRideAdventures {
 }
     .headerImgContainer {
     position: absolute;
-    bottom: -25%;
-    right: -20%;
+    top: 16%;
+    left: 58%;
 }
   
 
@@ -59,40 +57,39 @@ h1.boatRideAdventures {
 
     .about {
         background-color: #EAFEFC;
-        
-       .textBox01 {
-        width: 25px;
-        height:30px;
-        display: inline-block;
-        position: absolute;
-        left: -50px;
-        top: -3px;
-       }
-       .textBox02 {
-        width: 25px;
-        height:30px;
-        display: inline-block;
-        position: absolute;
-        left: -50px;
-        top: -3px;
-       }
-       .textBox03 {
-        width: 25px;
-        height:30px;
-        display: inline-block;
-        position: absolute;
-        left: -50px;
-        top: -3px;
-       }
-       .textBox04 {
-        width: 25px;
-        height:30px;
-        display: inline-block;
-        position: absolute;
-        left: -50px;
-        top: -3px;
-       }
+        padding-top: 200px;
+        padding-bottom: 100px;
+        h2 {
+            color: variables.$tertiary;
+            font-size: 2rem;
+            font-style: italic;
+        }
     }
+    .flexContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .icon1,
+        .icon2,
+        .icon3,
+        .icon4 {
+            padding-top: 65px;
+        }
+    }
+    .aboutContainer1,
+    .aboutContainer2,
+    .aboutContainer3,
+    .aboutContainer4 {
+        width: 50%;
+    }
+    
+    .aboutContainer1,
+    .aboutContainer2,
+    .aboutContainer3,
+    .aboutContainer4 {
+        display: flex;
+    }
+       
 
 // Home Locations Section Styles
     .locations {
@@ -104,6 +101,7 @@ h1.boatRideAdventures {
         h3, p {
             color: variables.$quaternary;
         }
+
    
          .imgContainer1,
         .textContainer1 {
@@ -114,11 +112,12 @@ h1.boatRideAdventures {
                 bottom:50px;
             }
          }
+
          .imgContainer2,
          .textContainer2 {
             width: 50%;
              img {
-             position: relative;
+            position: relative;
             left: 100px;
             top: 120px;
             }
@@ -148,13 +147,13 @@ h1.boatRideAdventures {
     background-color: #EAFEFC;
     padding-top: 60px;
     padding-bottom: 80px;
-    .wrapperContainer {
+    .wrapper {
         text-align: center;
         color: variables.$tertiary;
         text-align: center;
-        button {
-            background-color: variables.$primary;
-        }
+        // button {
+        //     background-color: variables.$primary;
+        // }
     }
 }
 

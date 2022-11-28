@@ -1,0 +1,105 @@
+@use "./variables" as var;
+
+//Blog section
+.sideBar { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 350px;
+    min-height: 750px;
+    margin-top: 130px;
+    padding: 50px 20px 30px;
+    background-color: var.$secondary;
+    &::before {
+        content: '';
+        width: 33vw;
+        height: 450px;
+        background-image: url(../assets/blog-side-image.jpg);
+        background-size: cover;
+        background-position: bottom;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 100px;
+    }
+    h5 {
+        margin-bottom: 20px;
+    }
+    p {
+        margin: 0;
+    }
+    .sidebarText {
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    li {
+        padding-bottom: 10px;
+        &:last-child {
+            padding-bottom: 0;
+        }
+        &::before {
+            content: '\2022';
+            color: var.$primary;
+            font-weight: bold;
+            display: inline-block;
+            margin: 0 15px;
+        }
+    }
+
+}
+
+//Contact Section
+.emailMe {
+    background-color: var.$secondary;
+    .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        height: 60vh;
+    }
+}
+
+.emailForm {
+    background-color: var.$secondary;
+    width: 55%;
+    padding: 50px 100px;
+    box-shadow: -40px 40px var.$primary;
+    position: relative;
+    top: -30%;
+    z-index: 10;
+}
+
+address {
+    font-style: normal;
+    p {
+        margin: 0;
+    }
+    p:first-child {
+        margin: 20px 0;
+    }
+}
+
+//Contact Section: side bar nav
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    i {
+        font-size: 2.6rem;
+    }
+}
+
+.sidebarNav ul {
+    display: flex;
+    flex-direction: row;
+    li {
+        margin-right: 20px;
+        transition: color 0.7s;
+        &:hover {
+            color: $seaGreen;
+        }
+    }
+}

@@ -16,66 +16,114 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header id="contact">
-        <div class="wrapper">
-            <nav class="contactNav">
-                <ul>
+    <header class="contactHeader">
+
+        <!-- Navigation -->
+        <!-- Desktop Navigation -->
+        <nav class="navBar">
+             <div class="wrapper">
+                <ul class="desktopNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-            <h1 class="getInTouch">Get In Touch</h1>
-        </div><!-- END .wrapper headerFlex-->
+            </div><!-- END .wrapper-->
+        </nav><!-- END .navBar -->
+
+        <!-- Mobile Navigation -->
+        <nav class="mobileNav">
+            <!-- Slide out menu button -->
+            <input type="checkbox" id="openSideMenu">
+            <label for="openSideMenu" class="mobileMenuBtn">
+                <i class="fa-solid fa-bars" aria-label="Open menu button" tabindex="0"></i>
+            </label>
+
+            <!-- Slide out navigation contents -->
+            <div class="slideOutNav">
+                <div class="wrapper">
+                    <!-- slideOutNav menu content -->
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul><!--END slide out menu content-->
+                    </nav> <!-- END menu contents-->
+
+                    <button class="menuClose">Close</button>
+                </div> <!-- END wrapper -->
+            </div> <!-- END slideOutNav-->
+        </nav> <!-- END mobileNav -->
+
+        <div class="wrapper headerFlex">
+            <h1>Get In Touch</h1>
+        </div><!-- END .wrapper headerFlex -->
      </header>
     
     <!-- Main Section -->
-    <main>
-        <div class="wrapper contactFlex">
-            <div class="contactInfo">
-                <div class="fontAwesome">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div><!-- END .fontAwesome -->
-
-                <div class="addressInfo">
-                    <p class="infoEmail">info@email.com</p>
-                    <p>123-456-7890 123<br> Queen Street West, Unit 10<br>Toronto, Ontario<br>M5V2D5</p> 
-                </div><!-- END .addressInfo -->
-            </div><!-- END .contactInfo -->
-
-            <div class="contactForm">
-                <form action="#" method="#" class="contactForm" name="contactForm">
-
-                    <div class="formContainer">
-                        <div class="userName">
-                            <label for="userName">Name</label>
-                            <input type="text" id="userName" name="userName">
-                        </div><!-- END .userName -->
+    <main class="emailMe" id="mainContent">
+        <div class="wrapper">
+            <!-- Contact Form -->
+            <form action="" class="emailForm">
+                <fieldset>
+                    <label for="userName" class="sr-only">Name</label>
+                    <input type="text" id="userName" placeHolder="Name">
     
-                        <div class="userEmail">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="userEmail" name="userEmail">
-                        </div><!-- END .userEmail -->
-                    </div><!-- END .formContainer -->
+                    <label for="email" class="sr-only">Email Address</label>
+                    <input type="email" id="userEmail" placeholder="Email address">
+                </fieldset>
 
-                    <label for="message"></label>
+                <label for="userMessage class="sr-only">Message</label>
+                <textarea id="userMessage" cols="30" rows="10" placeholder="Message"></textarea>
 
-                    <textarea class="contact" name="userMessage" id="message" cols="30" rows="10">Message</textarea>
+                <button type="submit">Submit</button> 
+            </form>
 
-                    <button id="submit" type="submit">Submit</button> 
-                </form>
-            </div><!-- END .contactForm -->
-        </div><!-- END .wrapper contactFlex -->
+                              
+            <!-- Contact Information -->
+            <aside class="address">
+                <nav class="sidebarNav">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                <span class="sr-only">Link to Facebook</span>
+                            </a>
+                         </li>
+                         <li>
+                            <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Link to Instagram</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Link to Twitter</span>
+                        </a>
+                        </li>
+                        <li>
+                             <a href="#"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                <span class="sr-only">Link to Whatsapp</span>
+                             </a>
+                        </li>
+                    </ul>
+                </nav> <!-- END sidebarNav--> 
+        
+                <address>
+                    <p><a href="mailto:info@email.com" class="emailAddress">info@email.com</a></p>
+
+                    <p>123-456-7890</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </address>
+            </aside> <!--END sidebar section-->
+        </div><!--END wrapper-->
     </main>
     
     <!-- Footer Section -->
     <footer>
-        <div class="wrapperFooter">
-            <p>Copyright 2019 HackerYou</p>
+        <div class="wrapper">
+            <p>Copyright &copy; 2019 HackerYou</p>
         </div>
     </footer>
     <script>
@@ -91,5 +139,6 @@
             button();
         }
     </script>
+    <script src="./script.js"></script>
 </body>
 </html>

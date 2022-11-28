@@ -1,0 +1,12 @@
+@use "./variables" as var;
+
+// Footer Styling
+footer {
+    background-color:var.$yellow;
+    color: var.$lightBlue;
+    padding: 5px 0px;
+    p {
+        text-align: center;
+        margin: 0;
+    }
+}

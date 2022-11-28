@@ -16,29 +16,65 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header id="home">
-        <!-- Header Wrapper -->
-        <div class="wrapper">
-            <nav class="homeNav">
-                <ul>
+    <header id="home" class="homeHeader">
+
+        <!-- Navigation -->
+
+        <!-- Desktop Navigation -->
+        <nav class="homeNav">
+            <div class="wrapper">
+                <ul class="desktopNav">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <h1 class="boatRideAdventures">Boat Ride Adventures</h1>
+                    <li class="toggleMode" id="toggle">😀</li>
+                </ul><!-- END .desktopNav -->
+            </div><!-- END .wrapper -->
+        </nav><!-- END .homeNav -->
 
+        <!-- Mobile Navigation -->
+        <nav class="mobileNav">
+            <!-- Slide out menu button -->
+            <input type="checkbox" id="openSideMenu">
+            <label for="openSideMenu" tabindex="-1" class="mobileMenuButton">
+                <i class="fa-solid fa-bars" aria-label="Open menu button" tabindex="0"></i>
+            </label>
+
+            <!-- Slide out navigation content -->
+            <div class="slideOutNav">
+                <div class="wrapper">
+                    <nav>
+                        <ul class="slideMainLinks">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul><!-- END .slideMainLinks -->
+                    </nav>
+                    <button class="menuClose">Close</button>
+                </div> <!-- END .wrapper -->
+            </div> <!-- END .slideOutNav -->
+        </nav> <!-- END .mobileNav -->
+
+        <div class="wrapper">
+            <h1>Boat Ride Adventures</h1>
+
+            <a href="#about" tabindex="-1">
+                <i class="fa-solid fa-angles-down scrollDown" aria-hidden="true"></i>
+            </a>
+    
             <div class="headerImgContainer">
                 <img src="./assets/home-box-header.png" alt="Cruiser white yacht with several floors riding in the ocean">
             </div><!-- END .headerImgContainer-->
+
         </div><!-- END .wrapper -->
     </header>
 
     <!-- Main Section -->
     <main>
         <!-- About Section -->
-        <section class="about">
+        <section id="about" class="about">
            <!-- About Wrapper -->
             <div class="wrapper">
                 <div class="flexContainer">
@@ -91,7 +127,7 @@
             </div><!-- END. wrapper -->
         </section> <!-- END .about section -->
 
-        <!-- Locations Section -->
+        <!-- Location Section -->
         <section class="locations">
             <!-- Locations Wrapper -->
             <div class="wrapper">
@@ -103,7 +139,7 @@
                     <div class="textContainer1">
                         <h3>Our Programs</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quibusdam fuga ipsa adipisci cum praesentium magni modi doloremque est iusto nostrum, officia recusandae ea earum nobis quaerat aliquid unde odit.</p>
-                        <button class="ourPrograms">Read More</button>
+                        <a href="#" class="linkBtn">Read more</a>
                     </div><!-- END .textContainer1 -->
                 </div><!-- END .programsFlex -->
 
@@ -111,7 +147,7 @@
                     <div class="textContainer2">
                         <h3>New Locations</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illum ab quam sit, adipisci quas, eum laboriosam consequuntur natus doloremque labore necessitatibus cupiditate eius, nihil iste ipsam sequi minima veniam.</p>
-                    <button>Read More</button>
+                        <a href="#" class="linkBtn">Read more</a>
                     </div><!-- END .textContainer2 -->
                     <div class="imgContainer2">
                     <img src="./assets/right-image.jpg" alt="Tip of a wooden boat deck with white rope and crystal clear water">
@@ -123,63 +159,64 @@
 
         <!-- Vacation section -->
         <section class="vacation">
-            <!-- Vacation Section Wrapper -->
             <div class="wrapper">
-
                 <h2>Extra vacation days?</h2>
                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati fugiat veritatis officia accusamus excepturi sapiente? Quisquam sed iusto doloribus quibusdam illo adipisci quis cum dignissimos sequi. Accusantium doloribus quidem voluptatum tempore labore doloremque quae! Aut recusandae quis maiores officia quam?</p>
-                <button>Find Out More</button>
-
-            </div> <!-- END .vacation wrapper -->
+               <a href="#" class="linkBtn">Find out more</a>
+            </div> <!-- END .wrapper -->
         </section><!-- END .vacation section -->
         
         <!-- Banner Section -->
         <section class="banner">
-            <img src="./assets/banner.jpg" alt="">
+            <ul>
+                <li><img src="./assets/banner.jpg" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+            </ul>
+            
+            <button class="buttonPrev"><</button>
+            <button class="buttonNext">></button>
         </section><!-- END .banner section -->
 
         <!-- Trip Section -->
        <section class="trip">
-
             <div class=" wrapper">
+               <div class="tripImgContainer">
+                    <img src="./assets/small-box.jpg" alt="Woman with long dark brown hair and a black hat looking at the mountains infront of her">
+               </div><!-- END .tripImgContainer -->
 
-               <div class="imgContainer3">
-               <img src="./assets/small-box.jpg" alt="Woman with long dark brown hair and a black hat looking at the mountains infront of her">
-               </div><!-- END .imgContainer3 -->
-
-               <div class="textContainer3">
-               <h2>Win Trip Of A Lifetime</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem error perferendis omnis at, pariatur asperiores blanditiis rem amet et reiciendis assumenda eos impedit facere possimus porro voluptatem atque! Beatae natus sed ab cumque at temporibus, voluptatum expedita distinctio amet, in perferendis eos veniam, libero rem. Reiciendis officia ipsum aspernatur.</p>
-               <button>Find Out More</button>
-               </div><!-- END .textContainer3 -->
-
+               <div class="tripTextContainer">
+                    <div class="tripText">
+                        <h2>Win Trip Of A Lifetime</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem error perferendis omnis at, pariatur asperiores blanditiis rem amet et reiciendis assumenda eos impedit facere possimus porro voluptatem atque! Beatae natus sed ab cumque at temporibus, voluptatum expedita distinctio amet, in perferendis eos veniam, libero rem. Reiciendis officia ipsum aspernatur.</p>
+                    </div> <!-- END .tripText -->
+                    <a href="#" class="linkBtn">Find out more</a>
+               </div><!-- END .tripTextContainer -->
             </div> <!-- END .wrapper -->
        </section>  <!--END .trip section  -->
 
         <!-- Gallery Section -->
-        <section class="gallery" id="gallery">
-            <!-- Gallery Wrapper -->
+        <section class="gallery">
             <div class="wrapper">
-
-                <ul class="galleryFlex">
+                <ul>
                     <li><img src="./assets/home-image-3@2x.jpg" alt="White small yacht in the middle of the ocean"></li>
                     <li><img src="./assets/home-image-1@2x.jpg" alt="Part of sailing boat w ith white ropes and ocean on the right side"></li>
                     <li><img src="./assets/home-image-2@2x.jpg" alt="Right side of the white boat deck with a metal fence and ocean on the right and front of the boat"></li>
                 </ul>
-                
             </div><!-- END .wrapper -->
         </section><!-- END .gallery section -->
     </main>
 
     <!-- Footer Section -->
     <footer>
-        <div class="wrapperFooter">
-            <p>Copyright 2019 HackerYou</p>
+        <div class="wrapper">
+            <p>Copyright &copy; 2019 HackerYou</p>
         </div>
     </footer>
-    <script>
+    <!-- <script>
         alert("Welcome to our website!");
-    </script>
-
+    </script> -->
+    <script src="./script.js"></script>
 </body>
 </html>

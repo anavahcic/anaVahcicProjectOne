@@ -530,6 +530,10 @@ li {
   list-style-type: none;
 }
 
+.darkMode {
+  background-color: black;
+}
+
 #blog {
   background-image: url(../assets/blog-header.jpg);
   background-repeat: no-repeat;

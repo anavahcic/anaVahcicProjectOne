@@ -16,117 +16,150 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header id="blog">
-        <div class="wrapper blogFlex">
-            <nav class="blogNav">
-                <ul>
+    <header id="blog" class="blog">
+        
+        <!-- Navigation -->
+        <!-- Desktop Navigation -->
+        <nav class="navBar">
+            <div class="wrapper">
+                <ul class="desktopNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <h1 class="blogPage">Blog</h1>
-        </div><!-- END .wrapper blogFlex -->
+                </ul><!-- END .desktopNav -->
+            </div><!-- END .desktipNav -->
+        </nav><!-- END .navBar -->
+
+        <!-- Mobile Navigation -->
+        <nav class="mobileNav">
+            <!-- Slide out menu -->
+            <input type="checkbox" id="openSideMenu">
+            <label for="openSideMenu" class="mobileMenuBtn">
+                <i class="fa-solid fa-bars" aria-label="Open menu button" tabindex="0"></i>
+            </label>
+
+            <!-- Slide out navigation content -->
+            <div class="slideOutNav">
+                <div class="wrapper">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <button class="menuClose">Close</button>
+                </div><!-- END .wrapper -->
+            </div><!-- END .slideOutNav -->
+        </nav><!-- END .mobileNav -->
+        
+        <div class="wrapper headerText">
+            <h1>Blog</h1>
+            <a href="./assets/blog-header.jpg" tabindex="-1">
+                <i classe="fa-solid fa-angles-down scrollDown" aria="hidden="true"></i>
+            </a>
+        </div><!-- END .wrapper headerFlex -->
     </header>
 
     <!-- Main Section-->
-    <main>
+    <main id="mainContent" class="blogMainContent">
         <div class="wrapper">
-            <!-- Aside Section -->
-             <aside class="asideSection">
-                <div class="imgContainerLeft">
-                    <img src="./assets/blog-side-image.jpg" alt="Sailing boat's wooden deck with white ambor">
-                </div><!-- END .imgContainerLeft -->
-                <div class="textContainerLeft">
-                     <h3>Our Mission</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae expedita corrupti nemo iusto eum perferendis sint fugit ducimus quis alias.</p>
-            
-                    <h3>Recent Posts</h3>
-                    <ul class="blog">
-                        <li>Donec facilisis tortor ut</li>
-                        <li>Augue lacinia at viverra</li>
-                        <li>Semper sed sapien metus</li>
-                        <li>Scelerisque nec phartera id</li>
-                    </ul>
-                </div><!-- END .textContainerLeft -->
-            </aside>
-          
-        
-            <!-- Blog Section -->
-            <section class="blogSection">
-                <div class="imgContainerRight">
-                    <img src="./assets/blog-post-image.jpg" alt="Front of the boat deck with white rope and light green edge">
-                </div><!-- END .imgContainerRight -->
-
-                <div class="textContainerBlog">
-                    <h2>Next Destination</h2>
-                    <p>Monday October 30, 2019 by Sulaire</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis cumque laudantium, velit suscipit iure sunt commodi dicta distinctio ipsa officia molestias culpa harum, hic earum voluptatem numquam, est tempora officiis! Quibusdam amet soluta unde, libero nihil ratione! Aspernatur voluptatem corporis magnam exercitationem incidunt blanditiis voluptate totam vitae voluptatibus a non, vero quas illum dicta qui! Labore architecto voluptatum veritatis quaerat?</p>
-                </div><!-- END .textContainerBlog -->
-
-                <div class="wrapperComments">
-        
-                    <div class="comments">
-                        <h2>Comments:</h2>
-                    </div><!-- END .comments -->
+            <!-- Left Blog Content -->
+            <div class="leftMainContent">
+                <!-- Blog article -->
+                <article class="blog">
+                    <div class="blogImgContainer">
+                        <img src="./assets/blog-post-image.jpg" alt="Front of the boat deck with white rope and light green edge">  
+                    </div><!-- END .blogImgContainer -->
                     
-                    <div class="textContainerCommentOne">
-                        <div class="imgContainerGuy">
+                    <div class="blogTextContainer">
+                        <h3>Next Destination</h3>
+                        <time datetime="2019-10-30" class="posTdate">Monday October 30, 2019 by Sulaire</time>
+                    
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ea consequuntur voluptates labore facere incidunt aliquid id ducimus suscipit velit, modi neque dolor aut dolorum repudiandae facilis et, reprehenderit quod molestiae qui? Laborum repudiandae error molestiae, quis quaerat asperiores praesentium sequi dolorem, provident dolor doloremque tenetur mollitia deserunt quibusdam repellat delectus ex? At dicta inventore deleniti optio quaerat quasi impedit suscipit voluptatum fugiat nostrum reprehenderit quo cupiditate et corporis, quae itaque facere, eius blanditiis ipsa? Repudiandae, autem nostrum sequi quam enim possimus laborum minima delectus ad reiciendis suscipit itaque quibusdam voluptate laudantium quos quidem esse molestiae soluta quisquam et fugiat non. Ex possimus eaque maxime dignissimos quas aliquid atque fugit enim, fuga, voluptatem velit eveniet vitae ullam, ipsam repellat. Veritatis, corporis illo? Alias ipsam id, temporibus facere, molestias sit animi incidunt ab aspernatur non numquam voluptas inventore esse repudiandae nulla! Illum est optio, velit nostrum consectetur quod omnis modi quia aliquid ex maxime totam sint officiis fugit, molestiae eaque perspiciatis? Consequuntur harum possimus hic nesciunt, vitae numquam at ad velit eos repellat ducimus et impedit! Similique quas sint sapiente aliquam obcaecati? Voluptatum, ab amet. Minus cum assumenda fugit. Ad illum, culpa, quam earum cupiditate tenetur eveniet, aperiam officia deserunt quos harum! Libero iusto sequi excepturi laboriosam, ratione at officiis ducimus temporibus aliquam ut voluptatibus blanditiis ea ipsa consequatur perferendis totam nulla numquam aut nostrum quo sed! Nesciunt totam quis fuga, ex eveniet necessitatibus rem ea placeat neque dicta quas? Neque placeat provident praesentium inventore quam blanditiis quae? Officia, ratione. Vitae necessitatibus rem cumque obcaecati maiores, asperiores eveniet quae repellendus esse corporis! Dolorem at aspernatur aperiam facilis ratione sint beatae dolore quae modi atque inventore, debitis, reprehenderit harum quos? Blanditiis provident iusto veniam dignissimos ut voluptates, aliquam maxime, tenetur hic sapiente tempora amet cumque corrupti veritatis eligendi placeat earum dolores! Sit, soluta consequatur. Consequatur quidem magnam rem non incidunt praesentium ullam placeat esse optio, distinctio odit. Modi, quaerat minima. Ex id debitis numquam molestiae tenetur, dicta nemo fuga! Quisquam aliquid eum iste illo ipsum fugit aspernatur atque obcaecati, corporis ex cupiditate libero ea debitis! Quo facere labore nostrum soluta nemo odio, tenetur saepe sunt doloribus recusandae architecto velit mollitia, illum voluptatum fuga ea exercitationem! Ipsa autem commodi, fuga blanditiis nobis iste perferendis optio suscipit a unde quidem. Aliquid quae corporis commodi quos excepturi numquam tempore blanditiis animi dolores ipsa molestiae illum recusandae, quaerat sint beatae odit dolorum id distinctio? Culpa aspernatur voluptates quidem repellat libero. Ratione, vitae asperiores. Aut totam repellendus assumenda nihil. Explicabo assumenda in obcaecati nostrum, eveniet eius quo accusamus autem tenetur perspiciatis ipsa consectetur eaque possimus suscipit nulla culpa, eligendi, iusto id provident porro aut. Cupiditate, ut error. Reiciendis pariatur amet porro illum odio, impedit eaque quam dolorum est modi voluptatibus eius sapiente, consectetur necessitatibus provident nisi dignissimos debitis perferendis aspernatur adipisci ut officia assumenda. Voluptatibus recusandae voluptas reiciendis! Consectetur reprehenderit ab deserunt tenetur? Adipisci pariatur sit est totam voluptatibus, veritatis mollitia aut voluptate nulla quis cupiditate eos, commodi natus maxime non quibusdam minus nisi consectetur quasi cumque.</p>
+                    </div><!-- END .blogTextContainer -->
+                </article><!-- END .blog -->
+
+                <!-- Comment Section -->
+                <section class="comments">
+                    <h4>Comments:</h4>
+                    <!-- First Commentor -->
+                    <article class="commentor">
+                        <div class="commentorImgContainer">
                             <img src="./assets/comment-1.jpg" alt="Head picture of a black man with black short hair and gray sweater">
-                        </div><!-- END .imgContainerGuy -->
-                        <div class="commentOne">
-                            <p class="comment">Tuesday October 9th, 2019 by Ali</p>
+                        </div><!-- END commentorImgContainer -->
+
+                        <div class="commentorTextContainer">
+                            <time datetime="2019-10-09" class="postDate">Tuesday October 9th, 2019 by Ali</time>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iste nam nemo ab cupiditate corrupti fuga maiores rerum ducimus cum?</p>
-                        </div><!-- END .commentOne -->
-                    </div> <!-- END .textContainerCommentOne-->
-                    
-                    <div class="textContainerCommentTwo">
-                        <div class="imgContainerGirl">
-                            <img src="./assets/comment-2.jpg" alt="Head picture of a white woman with brown long hair and smilling.">
-                        </div><!-- END .imgContainerGirl -->
-                        <div class="commentTwo">
-                            <p class="comment">Wednesday October 10th, 2019 by Lisa</p>
+                        </div><!-- END commentorTextContainer -->
+                    </article><!-- END .commentor-->
+
+                    <!-- Second Commentor -->
+                    <article class="commentor">
+                        <div class="commentorImgContainer">
+                            <img src="./assets/comment-2.jpg" alt="Head picture of a white woman with brown long hair and smilling">
+                        </div><!-- END .commentorImgContainer -->
+
+                        <div class="commentorTextContainer">
+                            <time datetime="2019-10-10" class="postDate">Wednesday October 10th, 2019 by Lisa</time>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nostrum nobis dolores deserunt, blanditiis distinctio!</p>
-                        </div><!-- END .commentTwo -->
-                    </div><!-- END .textContainerCommentTwo-->
-                </div><!-- END .wrapperComments -->
-                    
-                <div class="blogForm">
-                    <form action="#" method="#" class="blogForm" name="blogForm">
-                        
-                        <div class="formContainerBlog">
-                            <div class="userName">
-                                <label for="userName">Name</label>
-                                <input type="text" id="userName" name="userName">
-                            </div><!-- END .userName -->
-                              
-                            <div class="userEmailBlog">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="userEmail" name="userEmail">
-                            </div><!-- END .userEmail -->
-                        </div> <!-- End .formContainer -->
-                              
-                        <label for="comment"></label>
-                        <textarea name="userComment" id="comment" cols="30" rows="10">Comment</textarea>
-                            
-                        <button type="postComment">Post Comment</button> 
-                    </form>
-                </div><!-- END .blogForm -->
-            </section><!-- END .blogSection -->
-        </div> <!-- END .wrapper blogFlex -->
+                        </div><!-- END .commentorTextContainer -->
+                    </article><!-- END .commentor -->
+                </section><!-- END .comments section -->
+
+                <!-- Commentor Form -->
+                <form action="" class="commentForm">
+                    <fieldset>
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" placeholder="Email address">
+                    </fieldset>
+
+                        <label for="addComment" class="sr-only">Comment</label>
+                        <textarea name="addComment" id="addComment" cols="30" rows="10">Comment</textarea>
+
+                        <button type="submit">Post Comment</button>
+                </form>
+            </div><!-- END .leftMainContent -->
+
+            <!-- Right Blog Content -->
+            <div class="rightMainContent">
+                <aside class="sideBar">
+                    <!-- Sidebar text section 1 -->
+                    <div class="sidebarText">
+                        <h5>Recent Posts</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, nam?
+                            <em><a href="#" class="sidebarLink">Find out more</a></em>
+                        </p>
+                    </div> <!-- END .sidebarText -->
+
+                    <!-- Sidebar text section 2 -->
+                    <div class="siderbarText">
+                        <h5>Recent Posts</h5>
+                        <ul class="blog">
+                            <li><a href="#">Donec facilisis tortor ut</a></li>
+                            <li><a href="#">Augue lacinia at viverra</a></li>
+                            <li><a href="#">Semper sed sapien metus</a></li>
+                            <li><a href="#">Scelerisque nec phartera id</a></li>
+                        </ul>
+                    </div><!-- END .sidebarText -->
+                </aside><!-- END .sideBar -->
+            </div> <!-- END .rightMainContent -->
+        </div> <!-- END .wrapper -->
     </main>
 
     
     <!-- Footer Section -->
     <footer>
-        <div class="wrapperFooter">
-            <p>Copyright 2019 HackerYou</p>
+        <div class="wrapper">
+            <p>Copyright &copy; 2019 HackerYou</p>
         </div>
-    </footer>
-    <script>
-        alert("Welcome to our blog page!");
-    </script>
-    
+    </footer>  
 </body>
 </html>

@@ -1,0 +1,441 @@
+@use "./variables" as var;
+
+// Home Page Sections Stylings
+// About Section 
+.about {
+    background-color: #EAFEFC;
+    // padding-top: 200px;
+    // padding-bottom: 100px;
+    padding: 300px 0px;
+    h2 {
+        color: var.$blue;
+        font-size: 2rem;
+        font-style: italic;
+    }
+}
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .icon1,
+    .icon2,
+    .icon3,
+    .icon4 {
+        padding-top: 65px;
+    }
+}
+.aboutContainer1,
+.aboutContainer2,
+.aboutContainer3,
+.aboutContainer4 {
+    width: 50%;
+}
+
+.aboutContainer1,
+.aboutContainer2,
+.aboutContainer3,
+.aboutContainer4 {
+    display: flex;
+}
+
+// Location Section Stylings
+// Vacation Section Stylings
+// Banner Section Stylings
+.banner {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    li {
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        transition: 0.4s;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    button {
+        position: absolute;
+        top: 50%;
+        font-size: 6rem;
+        font-weight: bold;
+        color: var.$yellow;
+        text-shadow: 2px 2px var.$black;
+        transition: color 0.4s;
+        z-index: 10;
+        &:hover {
+            color: var.$lightBlue;
+        }      
+    }
+}
+
+.btnNext {
+    right: 2%;
+}
+
+.btnPrev {
+    left: 2%;
+}
+
+// Trip Section
+// Gallery Section
+.gallery {
+    padding: 100px 0;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    li {
+        flex-basis: calc(33% - 20px);
+        margin: 0 10px;
+    }
+    li:first-child {
+        margin-left: 0;
+    }
+    li:last-child {
+        margin-right: 0;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+
+// Blog Page Sections
+.blogMainContent {
+    padding-bottom: 50px;
+    background-color: $ice;
+    position: relative;
+    .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+//Blog content (right side)
+.leftMainContent {
+    width: 60%;
+}
+
+.blog {
+    border-bottom: 10px solid var.$yellow;
+    border-left: 10px solid var.$yellow;
+    padding-left: 40px;
+}
+
+.blogImgContainer {
+    box-shadow: -40px 40px var.$yellow;
+    position: absolute;
+    right: 0;
+    top: -15%;
+    width: 55%;
+    img {
+        width: 100%;
+    }
+}
+
+.blogTextContainer {
+    padding-top: 420px;
+
+    h3 {
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+}
+// Comment Section
+.comments{
+    padding: 40px 0 40px 40px;
+}
+
+.commentForm {
+    padding: 0 40px 40px;
+}
+
+.comments h4 {
+    margin-bottom: 40px;
+}
+
+.commentor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.commentorImgContainer {
+    width: 10%;
+}
+
+.commentorTextContainer {
+    width: 85%;
+    p {
+        margin: 0;
+    }
+}
+
+.postDate {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+
+//Article Section
+.articlePost {
+    display: flex;
+    justify-content: space-between;
+    .articlePostItem1,
+    .articlePostItem2 {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        .articleTextContainer {
+            padding: 50px 0;
+        }
+    }
+    .articlePostItem2 {
+        flex-direction: column-reverse;
+    }
+}
+
+.articlePostItem1 {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .articleImgContainer {
+        position: relative;
+        top: -100px;
+        z-index: 10;
+        img {
+            box-shadow: 40px 40px var.$yellow;
+        }
+    }
+    .articleTextContainer {
+        margin-left: auto;
+    }
+}
+
+.articlePostItem2 {
+    .articleImgContainer {
+        position: relative;
+        bottom: -100px;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 10;
+        img {
+            box-shadow: -40px 40px var.$yellow;
+        }
+    }
+    .articleTextContainer {
+        margin-right: auto;
+    }
+}
+
+//Contact Information Section
+.info {
+    background-color: var.$lightBlue;
+    padding: 200px 0;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .infoItem {
+        width: 45%;
+        i {
+            font-size: 2.5rem;
+            background-color: $seaGreen;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .infoItemTitle {
+            display: flex;
+            align-items: center;
+        }
+    }
+    p {
+        padding-left: 50px;
+    }
+}
+
+//Banner section
+.banner {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    li {
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        transition: 0.4s;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    button {
+        position: absolute;
+        top: 50%;
+        font-size: 6rem;
+        font-weight: bold;
+        color: $seaGreen;
+        text-shadow: 2px 2px $black;
+        transition: color 0.4s;
+        z-index: 10;
+        &:hover {
+            color: $canary;
+        }   
+    }
+}
+
+.btnNext {
+    right: 2%;
+}
+
+.btnPrev {
+    left: 2%;
+}
+
+//profile feature section
+.feature {
+    background-color: $ice;
+    padding: 100px 0;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .featureImgContainer {
+        width: 30%;
+        margin-right: 5%; 
+        img {
+            box-shadow: 40px 40px $canary;
+        }
+    }
+
+    .featureTextContainer {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+//Gallery section
+.gallery {
+    padding: 100px 0;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    li {
+        flex-basis: calc(33% - 20px);
+        margin: 0 10px;
+    }
+    li:first-child {
+        margin-left: 0;
+    }
+    li:last-child {
+        margin-right: 0;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+//Blog Main Section
+.blogMainContent {
+    padding-bottom: 50px;
+    background-color: $ice;
+    position: relative;
+    .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+//Blog content (right side)
+.leftMainContent {
+    width: 60%;
+}
+
+.blog {
+    border-bottom: 10px solid $canary;
+    border-left: 10px solid $canary;
+    padding-left: 40px;
+}
+
+.blogImgContainer {
+    box-shadow: -40px 40px $canary;
+    position: absolute;
+    right: 0;
+    top: -15%;
+    width: 55%;
+    img {
+        width: 100%;
+    }
+}
+
+.blogTextContainer {
+    padding-top: 420px;
+    h3 {
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+}
+
+//Comments Section
+.comments{
+    padding: 40px 0 40px 40px;
+}
+
+.commentForm {
+    padding: 0 40px 40px;
+}
+
+.comments h4 {
+    margin-bottom: 40px;
+}
+
+.commentor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.commentorImgContainer {
+    width: 10%;
+}
+
+.commentorTextContainer {
+    width: 85%;
+
+    p {
+        margin: 0;
+    }
+}
+
+.postDate {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+

@@ -1,9 +1,18 @@
-@use "./partials/global/setup";
-@use "./partials/global/typography";
-@use "./partials/global/variables";
-@use "./partials/home";
-@use "./partials/blog";
-@use "./partials/contact";
+// Generaly Styles
+@use "./partials/setup";
+@use "./partials/variables";
+@use "./partials/typography";
+@use "./partials/generalStylings";
+@use "./partials/animations";
+// Specific Styles
+@use "./partials/navigation";
+@use "./partials/header";
+@use "./partials/sections";
+@use "./partials/sidebar";
+@use "./partials/footer";
+@use "./partials/forms";
+// Media Query Styles
+@use "./partials/mediaQueries";
 
 
 

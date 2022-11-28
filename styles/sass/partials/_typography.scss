@@ -1,19 +1,18 @@
-@use "./variables";
-
+@use "./variables" as var;
 
 html {
     font-size: 125%;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var.$bodyFont;
     font-size: 1.2rem;
     font-weight: normal;
-    color: variables.$body;
+    color: var.$black;
 }
 
 nav {
-    font-family: 'Roboto', sans-serif;
+    font-family: var.$bodyFont;
     font-size: 1.25rem;
     line-height: 1.8rem;
     letter-spacing: 1px;
@@ -21,14 +20,16 @@ nav {
 }
 
 h1,h2,h3,h4, button {
-    font-family: 'IM Fell English SC', serif;
+    font-family: var.$headingFont;
     font-weight: normal;
     text-transform: uppercase;
+    margin: 0;
 }
 
 h1 {
     font-size: 4.9rem;
     font-style: italic;
+    text-align: center;
 }
 
 h2 {
@@ -53,8 +54,8 @@ h4 {
 button {
     font-size: 1.4rem;
     line-height: 2.6rem;
-    background-color: variables.$primary;
-    color: variables.$tertiary;
+    background-color: var.$yellow;
+    color: var.$lightBlue;
     text-align: center;
     padding: 5px 10px;
     margin: 0 auto;
@@ -66,20 +67,17 @@ p {
     letter-spacing: 1px;
 }
 
+em {
+    font-weight: bold;
+}
+
 .wrapper {
     max-width: 1080px;
     width: 90%;
     margin: 0 auto;
 }
 
-footer {
-    background-color:variables.$primary;
-    color: #000000;
-    text-align: center;
-    p {
-        margin: 0;
-    }
-}
+
 
 
 

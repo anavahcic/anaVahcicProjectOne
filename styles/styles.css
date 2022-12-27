@@ -343,7 +343,6 @@ button[type=submit] {
   letter-spacing: 1px;
   text-transform: uppercase;
   background-color: #FDD908;
-  border: 2px solid #0D457F;
   padding: 20px;
   display: inline-block;
   -webkit-transition: background-color 0.7s;
@@ -354,6 +353,7 @@ button[type=submit]:hover,
 button[type=submit]:focus {
   background-color: transparent;
   color: #0D457F;
+  border: 2px solid #0D457F;
 }
 
 .darkMode {

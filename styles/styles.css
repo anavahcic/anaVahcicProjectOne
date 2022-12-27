@@ -254,26 +254,25 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 4.9rem;
+  color: #FDD908;
   font-style: italic;
-  text-align: center;
+  text-align: left;
 }
 
-h2 {
+h2, h3, h4, h5 {
   font-size: 2.8rem;
-  line-height: 6.2rem;
+  color: #0D457F;
   font-style: italic;
 }
 
 h3 {
   font-size: 2.5rem;
-  line-height: 3.6rem;
   letter-spacing: 1.3px;
   font-style: italic;
 }
 
 h4, h5 {
   font-size: 1.5rem;
-  line-height: 3.6rem;
   letter-spacing: 0.8px;
 }
 
@@ -285,13 +284,6 @@ p {
   font-size: 1.25rem;
   line-height: 1.75rem;
   letter-spacing: 1px;
-}
-
-.emailAddress {
-  font-family: "IM Fell English", serif;
-  font-size: 1.6rem;
-  letter-spacing: 1.1px;
-  text-transform: uppercase;
 }
 
 em {
@@ -345,13 +337,14 @@ button {
 .linkBtn,
 button[type=submit] {
   font-family: "IM Fell English", serif;
+  font-style: italic;
+  color: #0D457F;
   text-align: center;
-  line-height: 3.2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   background-color: #FDD908;
-  border: 2px solid #FDD908;
-  padding: 5px 15px;
+  border: 2px solid #0D457F;
+  padding: 20px;
   display: inline-block;
   -webkit-transition: background-color 0.7s;
   transition: background-color 0.7s;
@@ -360,6 +353,7 @@ button[type=submit] {
 button[type=submit]:hover,
 button[type=submit]:focus {
   background-color: transparent;
+  color: #0D457F;
 }
 
 .darkMode {
@@ -400,12 +394,9 @@ button[type=submit]:focus {
 }
 
 .navBar {
-  font-family: "IM Fell English", serif;
-  text-transform: uppercase;
-  font-size: 2rem;
-  line-height: 2.9rem;
+  font-size: 1.2rem;
   letter-spacing: 1px;
-  padding: 10px 0;
+  padding: 20px 0;
   z-index: 10;
 }
 .navBar .desktopNav {
@@ -426,6 +417,10 @@ button[type=submit]:focus {
   border-bottom: 3px solid rgba(253, 217, 8, 0);
   -webkit-transition: 0.7s;
   transition: 0.7s;
+}
+.navBar .desktopNav li a {
+  font-family: "IM Fell English", serif;
+  color: #FFFFFF;
 }
 .navBar .desktopNav li:hover, .navBar .desktopNav li:focus {
   border-bottom: 3px solid #fdd908;
@@ -573,9 +568,7 @@ header .headerText {
 
 .about {
   background-color: #EAFEFC;
-  padding-top: 200px;
-  padding-bottom: 100px;
-  padding: 300px 0px;
+  padding: 150px 20px;
 }
 .about h2 {
   color: #0D457F;
@@ -618,12 +611,16 @@ header .headerText {
 }
 
 .articlePost {
+  background-color: #0D457F;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.articlePost h2, .articlePost p {
+  color: #FFFFFF;
 }
 .articlePost .articlePostItem1,
 .articlePost .articlePostItem2 {
@@ -672,6 +669,17 @@ header .headerText {
   margin-left: auto;
 }
 
+.articlePostItem2 .articleImgContainer {
+  position: relative;
+  left: 20px;
+  top: 100px;
+  z-index: 10;
+}
+.articlePostItem2 .articleImgContainer img {
+  -webkit-box-shadow: -20px 20px #FDD908;
+          box-shadow: -20px 20px #FDD908;
+}
+
 .info {
   background-color: #EAFEFC;
   padding: 300px 0;
@@ -687,6 +695,9 @@ header .headerText {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.info h2 {
+  color: #0D457F;
 }
 
 .banner {
@@ -744,12 +755,13 @@ header .headerText {
           justify-content: space-between;
 }
 .trip .tripImgContainer {
-  width: 30px;
-  margin-right: 5%;
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 15px;
 }
 .trip .tripImgContainer img {
-  -webkit-box-shadow: 20px 20px #FDD908;
-          box-shadow: 20px 20px #FDD908;
+  -webkit-box-shadow: -20px 20px #FDD908;
+          box-shadow: -20px 20px #FDD908;
 }
 .trip .tripTextContainer {
   width: 65%;
@@ -769,6 +781,7 @@ header .headerText {
 }
 
 .gallery {
+  background-color: #0D457F;
   padding: 100px 0;
 }
 .gallery ul {
@@ -883,6 +896,8 @@ header .headerText {
 .postDate {
   display: inline-block;
   margin-bottom: 10px;
+  color: #0D457F;
+  font-weight: bold;
 }
 
 .sideBar {
@@ -959,7 +974,7 @@ header .headerText {
 }
 
 .emailForm {
-  background-color: #FFFFFF;
+  background-color: #0D457F;
   width: 55%;
   padding: 50px 100px;
   -webkit-box-shadow: -40px 40px #FDD908;
@@ -992,7 +1007,7 @@ address p:first-child {
           justify-content: center;
 }
 .address i {
-  font-size: 2.6rem;
+  font-size: 1.2rem;
 }
 
 .sidebarNav ul {
@@ -1013,6 +1028,12 @@ address p:first-child {
   color: #EAFEFC;
 }
 
+.emailAddress {
+  font-family: "IM Fell English", serif;
+  font-size: 1.25rem;
+  letter-spacing: 1.1px;
+}
+
 footer {
   background-color: #FDD908;
   color: #EAFEFC;
@@ -1020,6 +1041,8 @@ footer {
 }
 footer p {
   text-align: center;
+  color: #0D457F;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -1031,6 +1054,10 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+form .submitBtn {
+  background-color: #0D457F;
+  color: #FDD908;
 }
 
 fieldset {
@@ -1051,7 +1078,7 @@ textarea {
   border: none;
   border-bottom: 2px solid #FDD908;
   font-family: "Roboto", sans-serif;
-  color: #000000;
+  color: #FFFFFF;
   padding: 10px 20px;
   margin-bottom: 50px;
 }

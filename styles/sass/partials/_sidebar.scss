@@ -63,7 +63,7 @@
 }
 
 .emailForm {
-    background-color: var.$white;
+    background-color: var.$blue;
     width: 55%;
     padding: 50px 100px;
     box-shadow: -40px 40px var.$yellow;
@@ -88,7 +88,7 @@ address {
     flex-direction: column;
     justify-content: center;
     i {
-        font-size: 2.6rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -102,4 +102,10 @@ address {
             color: var.$lightBlue;
         }
     }
+}
+
+.emailAddress {
+    font-family: var.$headingFont;
+    font-size: 1.25rem;
+    letter-spacing: 1.1px;
 }

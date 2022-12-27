@@ -4,6 +4,10 @@
 form {
     display: flex;
     flex-direction: column;
+    .submitBtn {
+        background-color: var.$blue;
+        color: var.$yellow;
+    }
 }
 
 fieldset {
@@ -20,7 +24,7 @@ textarea {
     border: none;
     border-bottom: 2px solid var.$yellow;
     font-family: var.$bodyFont;
-    color: var.$black;
+    color: var.$white;
     padding: 10px 20px;
     margin-bottom: 50px;
     &::placeholder {

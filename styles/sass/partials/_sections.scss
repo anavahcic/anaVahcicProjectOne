@@ -5,9 +5,7 @@
 // About Section 
 .about {
     background-color: var.$lightBlue;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    padding: 300px 0px;
+    padding: 150px 20px;
     h2 {
         color: var.$blue;
         font-size: 2rem;
@@ -41,8 +39,12 @@
 
 // Article Section
 .articlePost {
+    background-color: var.$blue;
     display: flex;
     justify-content: space-between;
+    h2, p {
+        color: var.$white;
+    }
     .articlePostItem1,
     .articlePostItem2 {
         width: 48%;
@@ -76,6 +78,18 @@
     }
 }
 
+.articlePostItem2 {
+    .articleImgContainer {
+        position: relative;
+        left: 20px;
+        top: 100px;
+        z-index: 10;
+        img {
+            box-shadow: -20px 20px var.$yellow;
+        }
+    }
+}
+
 // Info Section
 .info {
     background-color: var.$lightBlue;
@@ -84,6 +98,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    h2 {
+        color: var.$blue;
     }
 }
 
@@ -134,10 +151,11 @@
         justify-content: space-between;
     }
     .tripImgContainer {
-        width: 30px;
-        margin-right: 5%;
+        width: 50%;
+        margin-left: 5%;
+        margin-top: 15px;
         img {
-            box-shadow: 20px 20px var.$yellow;
+            box-shadow: -20px 20px var.$yellow;
         }
     }
     .tripTextContainer {
@@ -151,6 +169,7 @@
 
 // Gallery Section
 .gallery {
+    background-color: var.$blue;
     padding: 100px 0;
     ul {
         display: flex;
@@ -250,5 +269,7 @@
 .postDate {
     display: inline-block;
     margin-bottom: 10px;
+    color: var.$blue;
+    font-weight: bold;
 }
 

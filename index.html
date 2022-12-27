@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/323dbf2a01.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/323dbf2a01.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet"> 
@@ -15,13 +18,15 @@
     <title>Boat Ride Adventures</title>
 </head>
 <body>
+    <!-- Skip Link -->
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
     <!-- Header Section -->
-    <header id="home" class="homeHeader">
+    <header class="homeHeader">
 
         <!-- Navigation -->
-
         <!-- Desktop Navigation -->
-        <nav class="homeNav">
+        <nav class="navBar">
             <div class="wrapper">
                 <ul class="desktopNav">
                     <li><a href="#home">Home</a></li>
@@ -31,7 +36,7 @@
                     <li class="toggleMode" id="toggle">😀</li>
                 </ul><!-- END .desktopNav -->
             </div><!-- END .wrapper -->
-        </nav><!-- END .homeNav -->
+        </nav><!-- END .navBar -->
 
         <!-- Mobile Navigation -->
         <nav class="mobileNav">
@@ -52,29 +57,29 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul><!-- END .slideMainLinks -->
                     </nav>
+
                     <button class="menuClose">Close</button>
                 </div> <!-- END .wrapper -->
             </div> <!-- END .slideOutNav -->
         </nav> <!-- END .mobileNav -->
 
-        <div class="wrapper">
+        <div class="wrapper headerText">
             <h1>Boat Ride Adventures</h1>
 
             <a href="#about" tabindex="-1">
                 <i class="fa-solid fa-angles-down scrollDown" aria-hidden="true"></i>
             </a>
+        </div><!-- END .wrapper headerText-->
     
-            <div class="headerImgContainer">
-                <img src="./assets/home-box-header.png" alt="Cruiser white yacht with several floors riding in the ocean">
-            </div><!-- END .headerImgContainer-->
-
-        </div><!-- END .wrapper -->
+        <div class="headerImgContainer">
+            <img src="./assets/home-box-header.png" alt="Cruiser white yacht with several floors riding in the ocean">
+        </div><!-- END .headerImgContainer-->
     </header>
 
     <!-- Main Section -->
-    <main>
+    <main id="mainContent">
         <!-- About Section -->
-        <section id="about" class="about">
+        <section class="about">
            <!-- About Wrapper -->
             <div class="wrapper">
                 <div class="flexContainer">
@@ -100,8 +105,6 @@
                         </div> <!-- END .text2 -->
                      </div> <!-- END .aboutContainer2 -->
                     
-
-                   
                     <div class="aboutContainer3">
                         <div class="icon3">
                              <img src="./assets/test-page-icon.svg" alt="">
@@ -121,63 +124,65 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, autem?</p>
                         </div><!-- END .text4 -->
                     </div><!-- END .aboutContainer4 -->
-                   
   
                 </div> <!-- END .flexContainer -->
             </div><!-- END. wrapper -->
         </section> <!-- END .about section -->
 
-        <!-- Location Section -->
-        <section class="locations">
-            <!-- Locations Wrapper -->
-            <div class="wrapper">
-
-                <div class="programsFlex">
-                    <div class="imgContainer1">
-                        <img src="./assets/left-image.jpg" alt="White yacht cruising in the ocean">
-                    </div><!-- END .imgContainer1 -->
-                    <div class="textContainer1">
+        <!-- Article Section -->
+        <section class="articlePost">
+            <!-- First Article -->
+            <article class="articlePostItem1">
+                <div class="articleImgContainer">
+                    <img src="./assets/left-image.jpg" alt="White yacht cruising in the ocean">
+                </div><!-- END .articleImgContainer -->
+                
+                <div class="articleTextContainer">
+                    <div class="wrapper">
                         <h3>Our Programs</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quibusdam fuga ipsa adipisci cum praesentium magni modi doloremque est iusto nostrum, officia recusandae ea earum nobis quaerat aliquid unde odit.</p>
                         <a href="#" class="linkBtn">Read more</a>
-                    </div><!-- END .textContainer1 -->
-                </div><!-- END .programsFlex -->
+                    </div> <!-- END .wrapper -->
+                </div><!-- END .articleTextContainer -->
+            </article><!-- END .articlePostItem1 -->
 
-                <div class="locationsFlex">
-                    <div class="textContainer2">
-                        <h3>New Locations</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illum ab quam sit, adipisci quas, eum laboriosam consequuntur natus doloremque labore necessitatibus cupiditate eius, nihil iste ipsam sequi minima veniam.</p>
-                        <a href="#" class="linkBtn">Read more</a>
-                    </div><!-- END .textContainer2 -->
-                    <div class="imgContainer2">
+            <!-- Second Article -->
+            <article class="articlePostItem2">
+                <div class="articleImgContainer">
                     <img src="./assets/right-image.jpg" alt="Tip of a wooden boat deck with white rope and crystal clear water">
-                    </div> <!-- END .imgContainer2 -->
-                </div><!-- END .locationsFlex -->
+                </div> <!-- END .articleImgContainer -->
 
-             </div>  <!-- END .wrapper -->
-        </section> <!-- END .locations section -->
+                <div class="articleTextContainer">
+                    <div class="wrapper">
+                        <h3>New Locations</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illum ab quam sit, adipisci quas, eum laboriosam consequuntur natus doloremque labore necessitatibus cupiditate eius, nihil iste ipsam sequi minima veniam.</p>
+                            <a href="#" class="linkBtn">Read more</a>
+                    </div><!-- END .wrapper -->
+                </div><!-- END .articleTextContainer -->
+            </article><!-- END .articlePostItem2 -->
+        </section> <!-- END .articlePost section -->
 
-        <!-- Vacation section -->
-        <section class="vacation">
+        <!-- Info section -->
+        <section class="info">
             <div class="wrapper">
                 <h2>Extra vacation days?</h2>
                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati fugiat veritatis officia accusamus excepturi sapiente? Quisquam sed iusto doloribus quibusdam illo adipisci quis cum dignissimos sequi. Accusantium doloribus quidem voluptatum tempore labore doloremque quae! Aut recusandae quis maiores officia quam?</p>
-               <a href="#" class="linkBtn">Find out more</a>
+                <a href="#" class="linkBtn">Find out more</a>
             </div> <!-- END .wrapper -->
-        </section><!-- END .vacation section -->
+        </section><!-- END .info section -->
         
         <!-- Banner Section -->
-        <section class="banner">
+        <div class="banner">
             <ul>
                 <li><img src="./assets/banner.jpg" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
+                <li><img src="./assets/blog-post-image.jpg" alt=""></li>
+                <li><img src="./assets/blog-side-image.jpg" alt=""></li>
+                <li><img src="./assets/home-image-1@2x.jpg" alt=""></li>
             </ul>
             
-            <button class="buttonPrev"><</button>
-            <button class="buttonNext">></button>
-        </section><!-- END .banner section -->
+            <button class="btnPrev"><</button>
+            <button class="btnNext">></button>
+        </div><!-- END .banner -->
 
         <!-- Trip Section -->
        <section class="trip">
@@ -210,13 +215,10 @@
 
     <!-- Footer Section -->
     <footer>
-        <div class="wrapper">
-            <p>Copyright &copy; 2019 HackerYou</p>
-        </div>
+        <p>Copyright &copy; 2022 Juno College of Technology</p>
     </footer>
-    <!-- <script>
-        alert("Welcome to our website!");
-    </script> -->
+
+    <!-- JavaScript -->
     <script src="./script.js"></script>
 </body>
 </html>

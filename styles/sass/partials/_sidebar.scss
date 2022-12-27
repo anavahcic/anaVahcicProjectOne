@@ -9,7 +9,7 @@
     min-height: 750px;
     margin-top: 130px;
     padding: 50px 20px 30px;
-    background-color: var.$secondary;
+    background-color: var.$lightBlue;
     &::before {
         content: '';
         width: 33vw;
@@ -42,7 +42,7 @@
         }
         &::before {
             content: '\2022';
-            color: var.$primary;
+            color: var.$white;
             font-weight: bold;
             display: inline-block;
             margin: 0 15px;
@@ -53,7 +53,7 @@
 
 //Contact Section
 .emailMe {
-    background-color: var.$secondary;
+    background-color: var.$lightBlue;
     .wrapper {
         display: flex;
         flex-direction: row-reverse;
@@ -63,10 +63,10 @@
 }
 
 .emailForm {
-    background-color: var.$secondary;
+    background-color: var.$white;
     width: 55%;
     padding: 50px 100px;
-    box-shadow: -40px 40px var.$primary;
+    box-shadow: -40px 40px var.$yellow;
     position: relative;
     top: -30%;
     z-index: 10;
@@ -99,7 +99,7 @@ address {
         margin-right: 20px;
         transition: color 0.7s;
         &:hover {
-            color: $seaGreen;
+            color: var.$lightBlue;
         }
     }
 }

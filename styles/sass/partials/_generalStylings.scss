@@ -41,7 +41,7 @@ button {
     border: none;
     background-color: transparent;
     padding: 0;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .linkBtn,
@@ -60,6 +60,13 @@ button[type=submit] {
     &:focus {
         background-color: transparent;
     }
+}
+
+
+// Dark Mode
+.darkMode {
+    background-color: var.$black !important;
+    color: var.$white !important;
 }
 
 

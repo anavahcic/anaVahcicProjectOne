@@ -19,7 +19,7 @@ nav {
 
 }
 
-h1,h2,h3,h4, button {
+h1,h2,h3,h4,h5 {
     font-family: var.$headingFont;
     font-weight: normal;
     text-transform: uppercase;
@@ -45,20 +45,14 @@ h3 {
     font-style: italic;
 }
 
-h4 {
+h4, h5 {
     font-size: 1.5rem;
     line-height: 3.6rem;
     letter-spacing: 0.8px;
 }
 
-button {
-    font-size: 1.4rem;
-    line-height: 2.6rem;
-    background-color: var.$yellow;
-    color: var.$lightBlue;
-    text-align: center;
-    padding: 5px 10px;
-    margin: 0 auto;
+h5 {
+    font-size: 1.3rem;
 }
 
 p {
@@ -67,15 +61,18 @@ p {
     letter-spacing: 1px;
 }
 
+.emailAddress {
+    font-family: var.$headingFont;
+    font-size: 1.6rem;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
 em {
     font-weight: bold;
 }
 
-.wrapper {
-    max-width: 1080px;
-    width: 90%;
-    margin: 0 auto;
-}
+
 
 
 

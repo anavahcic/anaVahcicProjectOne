@@ -1,6 +1,17 @@
 @use "./variables" as var;
 
-// Navigation Styles
+//  Skip Link
+.slip-link {
+    position: absolute;
+    left: -1000px;
+    color: var.$black;
+    background-color: var.$white;
+    z-index: 10;
+    &:focus {
+        left: 0;
+    }
+}
+
 // Desktop Navigation
 .navBar {
     font-family: var.$headingFont;
@@ -17,11 +28,11 @@
         li {
             padding: 5px;
             margin: 0 30px;
-            border-bottom: 3px solid rgba($color: var.$primary, $alpha: 0);
+            border-bottom: 3px solid rgba($color: var.$yellow, $alpha: 0);
             transition: 0.7s;
             &:hover,
             &:focus {
-                border-bottom: 3px solid rgba($color: var.$primary, $alpha: 1);
+                border-bottom: 3px solid rgba($color: var.$yellow, $alpha: 1);
             }
         }
         li:last-child {
@@ -39,7 +50,7 @@
     z-index: 100;
     i {
         font-size: 5rem;
-        text-shadow: 1px 1px var.$primary;
+        text-shadow: 1px 1px var.$yellow;
     }
     input[type=checkbox] {
         opacity: 0;
@@ -52,7 +63,7 @@
 }
 
 .slideOutNav {
-   background-color: var.$body;
+   background-color: var.$black;
    position: fixed;
    top: -500px;
    left: 0;
@@ -73,22 +84,22 @@
    .menuClose {
         font-family: var.$headingFont;
         text-transform: uppercase;
-        color: var.$secondary;
+        color: var.$white;
         font-size: 4rem;
         transition: 0.7s;
         &:hover,
         &:focus {
-            color: var.$primary;
+            color: var.$yellow;
             }
         }
    .menuClose {
-        color: var.$primary;
-        border: 2px solid var.$primary;
+        color: var.$lightBlue;
+        border: 2px solid var.$lightBlue;
         padding: 5px 15px;
         &:hover,
         &:focus {
-            color: var.$secondary;
-            border: 2px solid var.$secondary;
+            color: var.$blue;
+            border: 2px solid var.$blue;
         }
    }
    li {

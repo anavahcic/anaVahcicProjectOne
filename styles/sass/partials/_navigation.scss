@@ -1,0 +1,116 @@
+@use "./variables" as var;
+
+//  Skip Link
+.slip-link {
+    position: absolute;
+    left: -1000px;
+    color: var.$black;
+    background-color: var.$white;
+    z-index: 10;
+    &:focus {
+        left: 0;
+    }
+}
+
+// Desktop Navigation
+.navBar {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    z-index: 10;
+    .desktopNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        li {
+            padding: 5px;
+            margin: 0 30px;
+            border-bottom: 3px solid rgba($color: var.$yellow, $alpha: 0);
+            transition: 0.7s;
+            a {
+            font-family: var.$headingFont;
+            color: var.$white;
+            }
+            &:hover,
+            &:focus {
+                border-bottom: 3px solid rgba($color: var.$yellow, $alpha: 1);
+            }
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+// Mobile Navigation
+.mobileNav {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    i {
+        font-size: 5rem;
+        text-shadow: 1px 1px var.$yellow;
+    }
+    input[type=checkbox] {
+        opacity: 0;
+        position: absolute;
+    }
+}
+
+.mobileMenuBtn {
+    cursor: pointer;
+}
+
+.slideOutNav {
+   background-color: var.$black;
+   position: fixed;
+   top: -500px;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   max-height: 400px;
+   padding: 50px 0;
+   z-index: 10;
+   transition: 0.7s;
+   .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        }
+   a,
+   .menuClose {
+        font-family: var.$headingFont;
+        text-transform: uppercase;
+        color: var.$white;
+        font-size: 4rem;
+        transition: 0.7s;
+        &:hover,
+        &:focus {
+            color: var.$yellow;
+            }
+        }
+   .menuClose {
+        color: var.$lightBlue;
+        border: 2px solid var.$lightBlue;
+        padding: 5px 15px;
+        &:hover,
+        &:focus {
+            color: var.$blue;
+            border: 2px solid var.$blue;
+        }
+   }
+   li {
+    text-align: center;
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+   }
+}
+
+
+

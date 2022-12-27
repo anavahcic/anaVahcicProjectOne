@@ -1,0 +1,75 @@
+@use "./variables" as var;
+
+body {
+    background-color: var.$lightBlue;
+}
+
+ul,
+li,
+a,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var.$black;
+    transition: color 0.7s;
+    &:hover,
+    &:focus {
+        color: var.$yellow;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1350px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer
+}
+
+.linkBtn,
+button[type=submit] {
+    font-family: var.$headingFont;
+    font-style: italic;
+    color: var.$blue;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: var.$yellow;
+    padding: 20px;
+    display: inline-block;
+    transition: background-color 0.7s;
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        color: var.$blue;
+        border: 2px solid var.$blue;
+    }
+}
+
+
+// Dark Mode
+.darkMode {
+    background-color: var.$black !important;
+    color: var.$white !important;
+}
+
+
+

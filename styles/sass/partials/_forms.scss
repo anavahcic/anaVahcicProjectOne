@@ -1,0 +1,45 @@
+@use "./variables" as var;
+
+// Form Stylings
+form {
+    display: flex;
+    flex-direction: column;
+    .submitBtn {
+        background-color: var.$blue;
+        color: var.$yellow;
+    }
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+input,
+textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var.$yellow;
+    font-family: var.$bodyFont;
+    color: var.$white;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    &::placeholder {
+        opacity: 1;
+    }
+}
+
+textarea {
+    border: 2px solid var.$yellow;
+    height: 100%;
+}
+
+input[type='text'],
+input[type='email'] {
+    width: 40%
+}
+
+

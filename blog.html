@@ -4,123 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/323dbf2a01.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/323dbf2a01.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <title>Boat Ride Adventures</title>
+    <title>Boat Ride Adventures: Blog</title>
 </head>
 <body>
+    <!-- Skip Link -->
+    <!-- <a href="#mainContent" class="skip-link">Skip to main content</a> -->
+
     <!-- Header Section -->
-    <header id="blog">
-        <div class="wrapper blogFlex">
-            <nav class="blogNav">
-                <ul>
-                    <li><a href="index.html" target="_blank">Home</a></li>
+    <header class="blogHeader">
+        
+        <!-- Navigation -->
+        <!-- Desktop Navigation -->
+        <nav class="navBar">
+            <div class="wrapper">
+                <ul class="desktopNav">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#blog">Blog</a></li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
-                </ul>
-            </nav>
-            <h1 class="blogPage">Blog</h1>
-        </div><!-- END .wrapper blogFlex -->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul><!-- END .desktopNav -->
+            </div><!-- END .wrapper -->
+        </nav><!-- END .navBar -->
+
+        <!-- Mobile Navigation -->
+        <nav class="mobileNav">
+            <!-- Slide out menu -->
+            <input type="checkbox" id="openSideMenu">
+            <label for="openSideMenu" class="mobileMenuBtn">
+                <i class="fa-solid fa-bars" aria-label="Open menu button" tabindex="0"></i>
+            </label>
+
+            <!-- Slide out navigation content -->
+            <div class="slideOutNav">
+                <div class="wrapper">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <button class="menuClose">Close</button>
+                </div><!-- END .wrapper -->
+            </div><!-- END .slideOutNav -->
+        </nav><!-- END .mobileNav -->
+        
+        <div class="wrapper headerText">
+            <h1>Blog</h1>
+            <a href="./assets/blog-header.jpg" tabindex="-1">
+                <i classe="fa-solid fa-angles-down scrollDown" aria="hidden="true"></i>
+            </a>
+        </div><!-- END .wrapper headerFlex -->
     </header>
 
     <!-- Main Section-->
-    <main>
-        <div class="wrapper blogFlex">
-            <!-- Aside Section -->
-             <aside class="asideSection">
-                <div class="imgContainerLeft">
-                    <img src="./assets/blog-side-image.jpg" alt="Sailing boat's wooden deck with white ambor">
-                </div><!-- END .imgContainerLeft -->
-                <div class="textContainerLeft">
-                     <h3>Our Mission</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae expedita corrupti nemo iusto eum perferendis sint fugit ducimus quis alias.</p>
-            
-                    <h3>Recent Posts</h3>
-                    <ul class="blog">
-                        <li>Donec facilisis tortor ut</li>
-                        <li>Augue lacinia at viverra</li>
-                        <li>Semper sed sapien metus</li>
-                        <li>Scelerisque nec phartera id</li>
-                    </ul>
-                </div><!-- END .textContainerLeft -->
-            </aside>
-          
-        
-            <!-- Blog Section -->
-            <section class="blogSection">
-                <div class="imgContainerRight">
-                    <img src="./assets/blog-post-image.jpg" alt="Front of the boat deck with white rope and light green edge">
-                </div><!-- END .imgContainerRight -->
-
-                <div class="textContainerBlog">
-                    <h2>Next Destination</h2>
-                    <p>Monday October 30, 2019 by Sulaire</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis cumque laudantium, velit suscipit iure sunt commodi dicta distinctio ipsa officia molestias culpa harum, hic earum voluptatem numquam, est tempora officiis! Quibusdam amet soluta unde, libero nihil ratione! Aspernatur voluptatem corporis magnam exercitationem incidunt blanditiis voluptate totam vitae voluptatibus a non, vero quas illum dicta qui! Labore architecto voluptatum veritatis quaerat?</p>
-                </div><!-- END .textContainerBlog -->
-
-                <div class="wrapperComments">
-        
-                    <div class="comments">
-                        <h2>Comments:</h2>
-                    </div><!-- END .comments -->
+    <main id="mainContent" class="blogMainContent">
+        <div class="wrapper">
+            <!-- Left Blog Content -->
+            <div class="leftMainContent">
+                <!-- Blog article -->
+                <article class="blog">
+                    <div class="blogImgContainer">
+                        <img src="./assets/blog-post-image.jpg" alt="Front of the boat deck with white rope and light green edge">  
+                    </div><!-- END .blogImgContainer -->
                     
-                    <div class="textContainerCommentOne">
-                        <div class="imgContainerGuy">
+                    <div class="blogTextContainer">
+                        <h3>Next Destination</h3>
+                        <time datetime="2019-10-30" class="posTdate">Monday October 30, 2019 by Sulaire</time>
+                    
+                        <p class="blogEntry"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nemo et sed voluptas quae pariatur laborum quam, ratione quibusdam doloremque, libero ipsam ab eum soluta. Aspernatur magnam eum accusamus est, natus quisquam vel, iure quibusdam at, voluptatibus amet doloribus facilis illum aliquid.</br><br>Ipsum incidunt voluptatum dignissimos molestiae nostrum, ullam molestias? Debitis soluta, atque, optio blanditiis natus dolores voluptatem provident necessitatibus harum incidunt alias libero accusamus dignissimos sapiente omnis dicta quasi sint in laborum non earum, reprehenderit eius voluptate?</br><br>Ad fuga voluptas similique ullam rerum fugiat, dignissimos voluptatibus, velit et delectus commodi iste doloremque animi pariatur beatae! Eum unde aliquam sint et facere facilis quos quam autem sunt vitae optio atque commodi placeat incidunt, odio iste molestias. Incidunt iure excepturi reprehenderit doloremque. Facere nulla tenetur eaque non tempora eius reiciendis ipsum vitae. Veniam deleniti cumque dolor laborum nemo suscipit ex hic explicabo deserunt impedit exercitationem, ducimus nisi. Repellat aliquam perspiciatis hic incidunt atque iusto veniam repudiandae maxime distinctio blanditiis, sed suscipit iste voluptates nemo, non enim aspernatur saepe porro perferendis minus! Ex molestiae distinctio velit doloremque ullam. Ullam porro iure magni atque dolore vero doloremque culpa recusandae.</br><br>Deserunt eaque corrupti ex laborum architecto id eos cum totam, aliquid repudiandae! Modi nesciunt facilis voluptas maiores sunt odio, doloremque, expedita rerum sint eius aspernatur, ut tenetur a id. Expedita aliquam assumenda mollitia deleniti tempore obcaecati perspiciatis odit nobis atque placeat eaque, repellat nemo quae laborum ipsum ex beatae vero officia soluta quis. Unde molestias dolorum ad reprehenderit adipisci laudantium, accusantium quas veniam distinctio error ullam obcaecati quae numquam laboriosam et a nostrum exercitationem recusandae.</br><br>Minus quidem voluptatum mollitia rem consequuntur ex iure, dolorum officiis delectus ratione nihil aliquid! Ratione debitis tempore veniam totam ab non beatae officiis iste tenetur? Necessitatibus similique sunt sit? Alias ipsam assumenda, odit numquam dolore voluptatibus tenetur harum. Architecto, deserunt rem? Id ex iusto corrupti amet debitis. Quam, labore? Ipsam dicta deleniti harum reprehenderit dolorem quas repellendus aperiam molestias asperiores, consequuntur aliquam cumque est repudiandae doloremque.</br><br>Doloribus, omnis! Nam vitae qui reprehenderit ad eum amet velit ea eos? Impedit doloribus omnis, neque ullam, aperiam quisquam esse qui nisi labore amet officia minus? Ex fuga eveniet iste non qui, aliquid commodi eligendi accusantium explicabo, velit quam? Repellat harum consequatur sequi officia ipsum.</br><br>Vero cumque, impedit deserunt eius, dolorum beatae nostrum optio ipsam, consequatur velit minima temporibus voluptates et fugiat corrupti nesciunt doloremque minus. Iusto voluptates commodi maiores nisi sint totam.</br></p>
+                    </div><!-- END .blogTextContainer -->
+                </article><!-- END .blog -->
+
+                <!-- Comment Section -->
+                <section class="comments">
+                    <h4>Comments:</h4>
+                    <!-- First Commentor -->
+                    <article class="commentor">
+                        <div class="commentorImgContainer">
                             <img src="./assets/comment-1.jpg" alt="Head picture of a black man with black short hair and gray sweater">
-                        </div><!-- END .imgContainerGuy -->
-                        <div class="commentOne">
-                            <p class="comment">Tuesday October 9th, 2019 by Ali</p>
+                        </div><!-- END commentorImgContainer -->
+
+                        <div class="commentorTextContainer">
+                            <time datetime="2019-10-09" class="postDate">Tuesday October 9th, 2019 by Ali</time>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iste nam nemo ab cupiditate corrupti fuga maiores rerum ducimus cum?</p>
-                        </div><!-- END .commentOne -->
-                    </div> <!-- END .textContainerCommentOne-->
-                    
-                    <div class="textContainerCommentTwo">
-                        <div class="imgContainerGirl">
-                            <img src="./assets/comment-2.jpg" alt="Head picture of a white woman with brown long hair and smilling.">
-                        </div><!-- END .imgContainerGirl -->
-                        <div class="commentTwo">
-                            <p class="comment">Wednesday October 10th, 2019 by Lisa</p>
+                        </div><!-- END commentorTextContainer -->
+                    </article><!-- END .commentor-->
+
+                    <!-- Second Commentor -->
+                    <article class="commentor">
+                        <div class="commentorImgContainer">
+                            <img src="./assets/comment-2.jpg" alt="Head picture of a white woman with brown long hair and smilling">
+                        </div><!-- END .commentorImgContainer -->
+
+                        <div class="commentorTextContainer">
+                            <time datetime="2019-10-10" class="postDate">Wednesday October 10th, 2019 by Lisa</time>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nostrum nobis dolores deserunt, blanditiis distinctio!</p>
-                        </div><!-- END .commentTwo -->
-                    </div><!-- END .textContainerCommentTwo-->
-                </div><!-- END .wrapperComments -->
-                    
-                <div class="blogForm">
-                    <form action="#" method="#" class="blogForm" name="blogForm">
-                            
-                        <label for="userName">Name</label>
-                        <input type="text" id="userName" name="userName">
-                            
-                        <label for="email">Email Address</label>
-                        <input type="text" id="emailInput" name="emaiLInput">
-                            
-                        <label for="message">Message</label>
-                        <textarea name="userMessage" id="message" cols="30" rows="10">Message</textarea>
-                            
-                        <label for="terribleSecret">Submit</label>
-                        <input type="text" id="terribleSecret" name="terribleSecret">
-                            
-                        <button type="submit">Submit</button> 
-                    </form>
-                </div><!-- END .blogForm -->
-            </section><!-- END .blogSection -->
-        </div> <!-- END .wrapper blogFlex -->
+                        </div><!-- END .commentorTextContainer -->
+                    </article><!-- END .commentor -->
+                </section><!-- END .comments section -->
+
+                <!-- Commentor Form -->
+                <form action="" class="commentForm">
+                    <fieldset>
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" placeholder="Email address">
+                    </fieldset>
+
+                        <label for="addComment" class="sr-only">Comment</label>
+                        <textarea name="addComment" id="addComment" cols="30" rows="10">Comment</textarea>
+
+                        <button class="submitBtn" type="submit">Post Comment</button>
+                </form>
+            </div><!-- END .leftMainContent -->
+
+            <!-- Right Blog Content -->
+            <div class="rightMainContent">
+                <aside class="sideBar">
+                    <!-- Sidebar text section 1 -->
+                    <div class="sidebarText">
+                        <h5>Recent Posts</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, nam?
+                            <em><a href="#" class="sidebarLink">Find out more</a></em>
+                        </p>
+                    </div> <!-- END .sidebarText -->
+
+                    <!-- Sidebar text section 2 -->
+                    <div class="siderbarText">
+                        <h5>Recent Posts</h5>
+                        <ul class="blog">
+                            <li><a href="#">Donec facilisis tortor ut</a></li>
+                            <li><a href="#">Augue lacinia at viverra</a></li>
+                            <li><a href="#">Semper sed sapien metus</a></li>
+                            <li><a href="#">Scelerisque nec phartera id</a></li>
+                        </ul>
+                    </div><!-- END .sidebarText -->
+                </aside><!-- END .sideBar -->
+            </div> <!-- END .rightMainContent -->
+        </div> <!-- END .wrapper -->
     </main>
 
     
     <!-- Footer Section -->
     <footer>
-        <div class="wrapper">
-            <p>Copyright 2019 HackerYou</p>
-        </div>
-    </footer>
-    
+        <p>Copyright &copy; 2022 Juno College of Technology</p>
+    </footer>  
+
+    <!-- JavaScript -->
+    <script src="./form.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

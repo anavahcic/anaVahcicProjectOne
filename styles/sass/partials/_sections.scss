@@ -1,0 +1,275 @@
+@use "./variables" as var;
+
+// Home Page Sections Stylings
+
+// About Section 
+.about {
+    background-color: var.$lightBlue;
+    padding: 150px 20px;
+    h2 {
+        color: var.$blue;
+        font-size: 2rem;
+        font-style: italic;
+    }
+}
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .icon1,
+    .icon2,
+    .icon3,
+    .icon4 {
+        padding-top: 65px;
+    }
+}
+.aboutContainer1,
+.aboutContainer2,
+.aboutContainer3,
+.aboutContainer4 {
+    width: 50%;
+}
+
+.aboutContainer1,
+.aboutContainer2,
+.aboutContainer3,
+.aboutContainer4 {
+    display: flex;
+}
+
+// Article Section
+.articlePost {
+    background-color: var.$blue;
+    display: flex;
+    justify-content: space-between;
+    h2, p {
+        color: var.$white;
+    }
+    .articlePostItem1,
+    .articlePostItem2 {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        .articleTextContainer {
+            padding: 50px 0;
+        }
+    }
+    .articlePostItem2 {
+        flex-direction: column-reverse;
+    }
+}
+
+.articlePostItem1 {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .articleImgContainer {
+        position: relative;
+        top: -100px;
+        z-index: 10;
+        img {
+            box-shadow: 20px 20px var.$yellow;
+        }
+    }
+    .articleTextContainer {
+        margin-left: auto;
+    }
+}
+
+.articlePostItem2 {
+    .articleImgContainer {
+        position: relative;
+        left: 20px;
+        top: 100px;
+        z-index: 10;
+        img {
+            box-shadow: -20px 20px var.$yellow;
+        }
+    }
+}
+
+// Info Section
+.info {
+    background-color: var.$lightBlue;
+    padding: 300px 0;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2 {
+        color: var.$blue;
+    }
+}
+
+// Banner Section Stylings
+.banner {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    li {
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        transition: 0.4s;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    button {
+        position: absolute;
+        top: 50%;
+        font-size: 6rem;
+        font-weight: bold;
+        color: var.$yellow;
+        text-shadow: 2px 2px var.$black;
+        transition: color 0.4s;
+        z-index: 10;
+        &:hover {
+            color: var.$yellow;
+        }      
+    }
+}
+.btnNext {
+    right: 2%;
+}
+.btnPrev {
+    left: 2%;
+}
+
+// Trip Section
+.trip {
+    background-color: var.$lightBlue;
+    padding: 100px 0;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .tripImgContainer {
+        width: 50%;
+        margin-left: 5%;
+        margin-top: 15px;
+        img {
+            box-shadow: -20px 20px var.$yellow;
+        }
+    }
+    .tripTextContainer {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+// Gallery Section
+.gallery {
+    background-color: var.$blue;
+    padding: 100px 0;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    li {
+        flex-basis: calc(33% - 20px);
+        margin: 0 10px;
+    }
+    li:first-child {
+        margin-left: 0;
+    }
+    li:last-child {
+        margin-right: 0;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+
+// Blog Page Sections
+.blogMainContent {
+    padding-bottom: 50px;
+    background-color: var.$lightBlue;
+    position: relative;
+    .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+//Blog content (right side)
+.leftMainContent {
+    width: 60%;
+}
+
+.blog {
+    border-bottom: 10px solid var.$yellow;
+    border-left: 10px solid var.$yellow;
+    padding-left: 40px;
+}
+
+.blogImgContainer {
+    box-shadow: -20px 20px var.$yellow;
+    position: absolute;
+    right: 0;
+    top: -15%;
+    width: 55%;
+    img {
+        width: 100%;
+    }
+}
+
+.blogTextContainer {
+    padding-top: 420px;
+
+    h3 {
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+}
+
+// Comment Section
+.comments{
+    padding: 40px 0 40px 40px;
+}
+
+.commentForm {
+    padding: 0 40px 40px;
+}
+
+.comments h4 {
+    margin-bottom: 40px;
+}
+
+.commentor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.commentorImgContainer {
+    width: 10%;
+}
+
+.commentorTextContainer {
+    width: 85%;
+    p {
+        margin: 0;
+    }
+}
+
+.postDate {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var.$blue;
+    font-weight: bold;
+}
+

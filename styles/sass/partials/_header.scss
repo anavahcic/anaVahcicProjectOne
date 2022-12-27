@@ -1,0 +1,61 @@
+@use "./variables" as var;
+
+// Home Header Styles
+ header {
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 80vh;
+     position: relative;
+     .headerText {
+         text-align: center;
+         position: absolute;
+         bottom: 10%;
+         left: 0;
+         right: 0;
+         z-index: 10;
+        }
+    }
+    
+.homeHeader {
+    background-image: url(../assets/home-header.jpg);
+    background-position: left;
+}
+
+.headerImg {
+    height: 80%;
+    width: 40%;
+    background-image: url(../assets/home-box-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: -20%;
+}
+
+.scrollDown {
+    display: none;
+    font-size: 5rem;
+    text-shadow: 2px 2px var.$lightBlue;
+    animation: iconSlideDown 1s ease-out infinite both;
+}
+
+// Blog and contact header
+.blogHeader,
+.contactHeader {
+    background-position: center;
+    .headerText {
+        bottom: 50%;
+        z-index: 10;
+    }
+}
+
+// Blog header
+.blogHeader {
+    background-image: url(../assets/blog-header.jpg);
+}
+
+// Contact header 
+.contactHeader {
+    background-image: url(../assets/contact-header.jpg);
+}
+    

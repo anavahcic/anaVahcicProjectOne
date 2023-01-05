@@ -6,35 +6,38 @@
 .about {
     background-color: var.$lightBlue;
     padding: 150px 20px;
-    h2 {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .infoItem {
+        width: 45%;
+        i {
+            font-size: 1.5rem;
+            background-color: var.$yellow;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .infoItemTitle {
+            display: flex;
+            align-items: center;
+        }
+    }
+    p {
+        padding-left: 50px;
+    }
+    a {
+        font-size: 2.8rem;
         color: var.$blue;
-        font-size: 2rem;
         font-style: italic;
+        font-family: var.$headingFont;
     }
-}
-.flexContainer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    .icon1,
-    .icon2,
-    .icon3,
-    .icon4 {
-        padding-top: 65px;
-    }
-}
-.aboutContainer1,
-.aboutContainer2,
-.aboutContainer3,
-.aboutContainer4 {
-    width: 50%;
-}
-
-.aboutContainer1,
-.aboutContainer2,
-.aboutContainer3,
-.aboutContainer4 {
-    display: flex;
 }
 
 // Article Section
@@ -87,6 +90,9 @@
         img {
             box-shadow: -20px 20px var.$yellow;
         }
+    }
+    .articleTextContainer {
+        margin-right: auto;
     }
 }
 

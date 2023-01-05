@@ -9,7 +9,7 @@
     min-height: 750px;
     margin-top: 130px;
     padding: 50px 20px 30px;
-    background-color: var.$lightBlue;
+    background-color: var.$blue;
     &::before {
         content: '';
         width: 33vw;
@@ -41,7 +41,7 @@
             padding-bottom: 0;
         }
         &::before {
-            content: '\2022';
+            // content: '\2022';
             color: var.$white;
             font-weight: bold;
             display: inline-block;

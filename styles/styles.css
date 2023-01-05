@@ -570,44 +570,52 @@ header .headerText {
   background-color: #EAFEFC;
   padding: 150px 20px;
 }
-.about h2 {
-  color: #0D457F;
-  font-size: 2rem;
-  font-style: italic;
-}
-
-.flexContainer {
+.about .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.flexContainer .icon1,
-.flexContainer .icon2,
-.flexContainer .icon3,
-.flexContainer .icon4 {
-  padding-top: 65px;
+.about .infoItem {
+  width: 45%;
 }
-
-.aboutContainer1,
-.aboutContainer2,
-.aboutContainer3,
-.aboutContainer4 {
-  width: 50%;
-}
-
-.aboutContainer1,
-.aboutContainer2,
-.aboutContainer3,
-.aboutContainer4 {
+.about .infoItem i {
+  font-size: 1.5rem;
+  background-color: #FDD908;
+  width: 40px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.about .infoItem .infoItemTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about p {
+  padding-left: 50px;
+}
+.about a {
+  font-size: 2.8rem;
+  color: #0D457F;
+  font-style: italic;
+  font-family: "IM Fell English", serif;
 }
 
 .articlePost {
@@ -678,6 +686,9 @@ header .headerText {
 .articlePostItem2 .articleImgContainer img {
   -webkit-box-shadow: -20px 20px #FDD908;
           box-shadow: -20px 20px #FDD908;
+}
+.articlePostItem2 .articleTextContainer {
+  margin-right: auto;
 }
 
 .info {

@@ -949,29 +949,58 @@ header .headerText {
   left: 0;
   margin-top: 100px;
 }
-.sideBar h5 {
-  margin-bottom: 20px;
+.sideBar .sidebarText h5 {
+  font-family: "IM Fell English", serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #FDD908;
+  margin-top: 400px;
 }
-.sideBar p {
-  margin: 0;
-}
-.sideBar .sidebarText {
-  margin-bottom: 50px;
-}
-.sideBar .sidebarText:last-child {
-  margin-bottom: 0;
-}
-.sideBar li {
-  padding-bottom: 10px;
-}
-.sideBar li:last-child {
-  padding-bottom: 0;
-}
-.sideBar li::before {
+.sideBar .sidebarText p, .sideBar .sidebarText .sidebarLink {
   color: #FFFFFF;
-  font-weight: bold;
-  display: inline-block;
-  margin: 0 15px;
+  font-size: 1rem;
+}
+.sideBar .sidebarText .recentPosts {
+  margin-top: 10px;
+}
+.sideBar .sidebarText .blogRecentPosts {
+  list-style-type: circle;
+  padding: 20px;
+}
+.sideBar .sidebarText .blogRecentPosts li, .sideBar .sidebarText .blogRecentPosts a {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 5px;
+}
+
+.sideBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 350px;
+  min-height: 750px;
+  margin-top: 130px;
+  padding: 50px 20px 30px;
+  background-color: #0D457F;
+}
+.sideBar::before {
+  width: 33vw;
+  height: 450px;
+  background-size: cover;
+  background-position: bottom;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 100px;
 }
 
 .emailMe {

@@ -32,13 +32,6 @@
     bottom: -20%;
 }
 
-.scrollDown {
-    display: none;
-    font-size: 5rem;
-    text-shadow: 2px 2px var.$lightBlue;
-    animation: iconSlideDown 1s ease-out infinite both;
-}
-
 // Blog and contact header
 .blogHeader,
 .contactHeader {
@@ -46,6 +39,13 @@
     .headerText {
         bottom: 50%;
         z-index: 10;
+        margin-top: 100px;
+    }
+    .blogTitle, .contactTitle {
+        color: var.$white;
+    }
+    .contactTitle {
+        padding-margin: 400px;
     }
 }
 

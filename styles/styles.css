@@ -311,9 +311,6 @@ a {
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
-a:hover, a:focus {
-  color: #FDD908;
-}
 
 img {
   max-width: 100%;
@@ -346,13 +343,6 @@ button[type=submit] {
   display: inline-block;
   -webkit-transition: background-color 0.7s;
   transition: background-color 0.7s;
-}
-.linkBtn:hover, .linkBtn:focus,
-button[type=submit]:hover,
-button[type=submit]:focus {
-  background-color: transparent;
-  color: #0D457F;
-  border: 2px solid #0D457F;
 }
 
 .darkMode {
@@ -539,14 +529,6 @@ header .headerText {
   bottom: -20%;
 }
 
-.scrollDown {
-  display: none;
-  font-size: 5rem;
-  text-shadow: 2px 2px #EAFEFC;
-  -webkit-animation: iconSlideDown 1s ease-out infinite both;
-          animation: iconSlideDown 1s ease-out infinite both;
-}
-
 .blogHeader,
 .contactHeader {
   background-position: center;
@@ -555,6 +537,16 @@ header .headerText {
 .contactHeader .headerText {
   bottom: 50%;
   z-index: 10;
+  margin-top: 100px;
+}
+.blogHeader .blogTitle, .blogHeader .contactTitle,
+.contactHeader .blogTitle,
+.contactHeader .contactTitle {
+  color: #FFFFFF;
+}
+.blogHeader .contactTitle,
+.contactHeader .contactTitle {
+  padding-margin: 400px;
 }
 
 .blogHeader {
@@ -819,10 +811,6 @@ header .headerText {
   width: 100%;
 }
 
-.blogTitle {
-  color: #FFFFFF;
-}
-
 .blogMainContent {
   padding-bottom: 50px;
   background-color: #EAFEFC;
@@ -974,35 +962,6 @@ header .headerText {
   padding: 5px;
 }
 
-.sideBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 350px;
-  min-height: 750px;
-  margin-top: 130px;
-  padding: 50px 20px 30px;
-  background-color: #0D457F;
-}
-.sideBar::before {
-  width: 33vw;
-  height: 450px;
-  background-size: cover;
-  background-position: bottom;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 100px;
-}
-
 .emailMe {
   background-color: #EAFEFC;
 }
@@ -1024,8 +983,8 @@ header .headerText {
   background-color: #0D457F;
   width: 55%;
   padding: 50px 100px;
-  -webkit-box-shadow: -40px 40px #FDD908;
-          box-shadow: -40px 40px #FDD908;
+  -webkit-box-shadow: 20px 20px #FDD908;
+          box-shadow: 20px 20px #FDD908;
   position: relative;
   top: -30%;
   z-index: 10;
@@ -1056,6 +1015,9 @@ address p:first-child {
 .address i {
   font-size: 1.2rem;
 }
+.address p {
+  font-size: 1rem;
+}
 
 .sidebarNav ul {
   display: -webkit-box;
@@ -1071,8 +1033,8 @@ address p:first-child {
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
-.sidebarNav ul li:hover {
-  color: #EAFEFC;
+.sidebarNav ul li i {
+  color: #0D457F;
 }
 
 .emailAddress {

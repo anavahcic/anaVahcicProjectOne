@@ -20,10 +20,6 @@ a {
     text-decoration: none;
     color: var.$black;
     transition: color 0.7s;
-    &:hover,
-    &:focus {
-        color: var.$yellow;
-    }
 }
 
 img {
@@ -56,12 +52,6 @@ button[type=submit] {
     padding: 20px;
     display: inline-block;
     transition: background-color 0.7s;
-    &:hover,
-    &:focus {
-        background-color: transparent;
-        color: var.$blue;
-        border: 2px solid var.$blue;
-    }
 }
 
 

@@ -1118,30 +1118,6 @@ input[type=email] {
   width: 40%;
 }
 
-@media (min-width: 1990px) {
-  .blogTextContainer {
-    padding-top: 450px;
-  }
-  .leftMainContent {
-    width: 61%;
-  }
-}
-@media (min-width: 2100px) {
-  .blogTextContainer {
-    padding-top: 520px;
-  }
-  .leftMainContent {
-    width: 61%;
-  }
-}
-@media (min-width: 2400px) {
-  .blogTextContainer {
-    padding-top: 600px;
-  }
-  .leftMainContent {
-    width: 62%;
-  }
-}
 @media (max-width: 1780px) {
   .blogTextContainer {
     padding-top: 350px;
@@ -1248,6 +1224,14 @@ input[type=email] {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 1040px) {
+  .headerImg {
+    display: none;
+  }
+  .infoItemTitle i, .infoItemTitle a {
+    font-size: 1.4rem;
+  }
+}
 @media (max-width: 1000px) {
   header .wrapper:nth-child(2) {
     bottom: 5%;
@@ -1256,8 +1240,31 @@ input[type=email] {
     height: 500px;
     width: 50%;
     background-position: bottom;
-    border: 30px solid #0D457F;
-    border-right: none;
+  }
+  .info {
+    padding: 50px 0;
+  }
+  .info .infoItem {
+    margin-bottom: 20px;
+  }
+  .info .infoItem i {
+    font-size: 3.5rem;
+    width: 75px;
+    height: 75px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .info .infoItem .infoItemTitle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info p {
+    padding-left: 0;
+  }
+  article.infoItem:last-child {
+    margin: 0;
   }
   .about {
     padding: 200px 0 100px 0;
@@ -1317,7 +1324,7 @@ input[type=email] {
   .info .infoItem {
     width: 65%;
   }
-  .feature .wrapper {
+  .trip .wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1326,7 +1333,7 @@ input[type=email] {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .feature .featureImgContainer {
+  .trip .tripImgContainer {
     width: 100%;
     margin: 0;
     display: -webkit-box;
@@ -1336,12 +1343,12 @@ input[type=email] {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .feature .featureImgContainer img {
+  .trip .tripImgContainer img {
     -webkit-box-shadow: none;
             box-shadow: none;
     border: 20px solid #FDD908;
   }
-  .feature .featureTextContainer {
+  .trip .tripTextContainer {
     width: 80%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1351,18 +1358,15 @@ input[type=email] {
             align-items: center;
     margin-top: 20px;
   }
-  .featureText h3,
-.featureText p {
+  .trip .tripText {
     text-align: center;
+    padding-top: 20px;
   }
   .gallery {
     padding: 50px 0;
   }
 }
 @media (max-width: 800px) {
-  .scrollDown {
-    display: block;
-  }
   .navBar {
     display: none;
   }
@@ -1385,6 +1389,31 @@ input[type=email] {
     line-height: 3rem;
     text-align: center;
   }
+  .info {
+    padding: 50px 0;
+  }
+  .info .infoItem {
+    margin-bottom: 20px;
+  }
+  .info .infoItem i {
+    font-size: 3.5rem;
+    width: 75px;
+    height: 75px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .info .infoItem .infoItemTitle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info p {
+    padding-left: 0;
+  }
+  article.infoItem:last-child {
+    margin: 0;
+  }
   .about {
     padding: 100px 0;
   }
@@ -1404,6 +1433,7 @@ input[type=email] {
   .articlePost .articlePostItem1 .articleImgContainer img,
 .articlePost .articlePostItem2 .articleImgContainer img {
     width: 100%;
+    border: 20px solid #FDD908;
   }
   .articlePostItem1 .wrapper {
     -webkit-box-align: center;
@@ -1430,28 +1460,6 @@ input[type=email] {
   }
   .articleTextContainer {
     width: 100%;
-  }
-  .info {
-    padding: 50px 0;
-  }
-  .info .infoItem {
-    margin-bottom: 20px;
-  }
-  .info .infoItem i {
-    font-size: 3.5rem;
-    width: 75px;
-    height: 75px;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  .info .infoItem .infoItemTitle {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .info p {
-    padding-left: 0;
   }
   article.infoItem:last-child {
     margin: 0;
@@ -1546,14 +1554,14 @@ input[type=email] {
   .banner button {
     top: 45%;
   }
-  .feature .featureImgContainer img {
+  .trip .tripImgContainer img {
     border: none;
   }
-  .feature .featureTextContainer {
+  .trip .tripTextContainer {
     width: 100%;
   }
   .about,
-.feature {
+.trip {
     padding: 50px 0;
   }
   .sideBar {
